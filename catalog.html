@@ -76,26 +76,92 @@
 </form>
     <section class="catalog">
     <h2 class="visually-hidden">Каталог</h2>
-    <div class="catalog__sorting sorting-controls">
-      <h3 class="sorting-controls__caption">Сортировать</h3>
-      <ul class="sorting-controls__list">
-        <li class="sorting-controls__item">
-          <button class="sorting-controls__button" type="button">По цене</button>
+    <div class="catalog__markers markers">
+      <h3 class="markers__caption">Сортировать</h3>
+      <ul class="markers__list">
+        <li class="markers__item">
+          <button class="markers__button" type="button">По цене</button>
         </li>
-        <li class="sorting-controls__item">
-          <button class="sorting-controls__button" type="button">По типу</button>
+        <li class="markers__item">
+          <button class="markers__button" type="button">По типу</button>
         </li>
-        <li class="sorting-controls__item">
-          <button class="sorting-controls__button" type="button">По названию</button>
+        <li class="markers__item">
+          <button class="markers__button" type="button">По названию</button>
         </li>
       </ul>
-      <div class="sorting-controls__result result">
-      <button class="result__button-up" type="button"></button>
-      <button class="result__button-down" type="button"></button>
+      <div class="markers__result">
+      <button class="markers__result__button-up" type="button"></button>
+      <button class="markers__result__button-down" type="button"></button>
     </div>
     </div>
-  </section>
-  <div class="page-navigation"></div>
+
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <img class="catalog__image" src="img/catalog_sedona.jpg" alt="дизайн-проект: Sedona">
+          <div class="catalog__preview">
+           <a class="catalog__title" href="modalSedona.html">Sedona</a>
+            <p class="catalog__description">Информационный сайт для туристов</p>
+            <button class="catalog__button-buy button" type="button">9900 руб</button>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <img class="catalog__image" src="img/catalog_pink.jpg" alt="дизайн-проект: Pink App">
+          <div class="catalog__preview">
+            <a class="catalog__title" href="modalPink.html">Pink App</a>
+            <p class="catalog__description">
+              Продуктовый лендинг приложения для iOS и Android
+            </p>
+            <button class="catalog__button-buy button" type="button">9900 руб</button>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <img class="catalog__image" src="img/catalog_barbershop.jpg" alt="дизайн-проект: Barbershop">
+          <div class="catalog__preview">
+            <a class="catalog__title" href="modalBarbershop.html">Barbershop</a>
+            <p class="catalog__description">
+              Сайт салоны красоты. Для мужчин, да.
+            </p>
+            <button class="catalog__button-buy button" type="button">9900 руб</button>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <img class="catalog__image" src="img/catalog_mishka.jpg" alt="дизайн-проект: Mishka">
+          <div class="catalog__preview">
+            <a class="catalog__title" href="modalMishka.html">Mishka</a>
+            <p class="catalog__description">
+              Интернет-магазин вязаных игрушек
+            </p>
+            <button class="catalog__button-buy button" type="button">9900 руб</button>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <img class="catalog__image" src="img/catalog_aplus.jpg" alt="дизайн-проект: A Plus">
+          <div class="catalog__preview">
+            <a class="catalog__title" href="modalAPlus.html">A Plus</a>
+            <p class="catalog__description">
+              Лендинг курсов повышения квалификации
+            </p>
+            <button class="catalog__button-buy button" type="button">9900 руб</button>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <img class="catalog__image" src="img/catalog_kvast.jpg" alt="дизайн-проект: Кваст">
+          <div class="catalog__preview">
+            <a class="catalog__title" href="modalKvast.html">Кваст</a>
+            <p class="catalog__description">
+              Промо-сайт производителя крафтового кваса
+            </p>
+            <button class="catalog__button-buy button" type="button">9900 руб</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <div class="pagination">
+      <a class="pagination__page link-active">1</a>
+      <a class="pagination__page" href="catalogPage2.html">2</a>
+      <a class="pagination__page" href="catalogPage3.html">3</a>
+      <button class="pagination__next button" type="button"></button>
+    </div>
 </div>
   <section class="map">
     <h2 class="visually-hidden">Карта</h2>
