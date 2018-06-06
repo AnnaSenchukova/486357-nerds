@@ -5,8 +5,233 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
+<header class="page-header">
+  <nav class="navigation">
+<a class = "navigation__logo-link link-active"></a>
+    <img class="navigation__logo-image" src="img/logo.svg" alt="Логотип Нёрдс. Переход на главную страницу сайта.">
+  </nav>
+  <ul class="navigation__list site-list">
+    <li class="site-list__item">
+      <a class="site-list__link" href="studio.html">Студия</a>
+    </li>
+    <li class="site-list__item">
+      <a class="site-list__link" href="clients.html">Клиенты</a>
+    </li>
+    <li class="site-list__item">
+      <a class="site-list__link" href="catalog.html">Магазин</a>
+    </li>
+    <li class="site-list__item">
+      <a class="site-list__link" href="contacts.html">Контакты</a>
+    </li>
+  </ul>
+  <ul class="navigation__list user-list">
+    <li class="user-list__item">
+      <a class="user-list__link" href="basket.html">Корзина</a>
+    </li>
+  </ul>
+</header>
+<main class = "page-main">
+  <div class="container">
+  <h1 class="visually-hidden">NЁRDS DESIGN STUDIO</h1>
+  <section class = "slider">
+    <h2 class="visually-hidden">Наши принципы</h2>
+    <ul class="slider__list">
+      <li class="slider__item slider__item--principe-cash">
+        <h3 class="slider__caption">Долго, дорого,
+          скрупулезно.</h3>
+        <p class="slider__description">Математически выверенный дизайн
+          для вашего сайта или мобильного приложения.</p>
+        <a class="slider__button button">Узнать больше</a>
+      </li>
+      <li class="slider__item slider__item--principe-math">
+        <h3 class="slider__caption">Любим математику
+          как никто другой</h3>
+        <p class="slider__description">Никакого креатива, только математические формулы
+          для расчета идеальных пропорций.</p>
+        <a class="slider__button button">Узнать больше</a>
+      </li>
+      <li class="slider__item slide__item--principe-night">
+        <h3 class="slider__caption">Только ночь,
+          только хардкор</h3>
+        <p class="slider__description">Работать днем, как все? Мы против этого.
+          Ближе к полуночи работа только начинается.</p>
+        <a class="slider__button button">Узнать больше</a>
+      </li>
+    </ul>
+    <input class="visually-hidden  slide-1" type="radio" id="principe-1" name="toggle" checked>
+    <input class="visually-hidden  slide-2" type="radio" id="principe-2" name="toggle">
+    <input class="visually-hidden  slide-3" type="radio" id="principe-3" name="toggle">
+    <div class="slider__controls">
+      <label class="slider-page-1" for="principe-1">Первый слайд</label>
+      <label class="slider-page-2" for="principe-2">Второй слайд</label>
+      <label class="slider-page-3" for="principe-3">Третий слайд</label>
+    </div>
+  </section>
+<section class = "services">
+  <h2>Мы можем сделать для вас:</h2>
+  <ul class="services__list">
+    <li class="services__item">
+      <h3 class="services__caption">Веб-сайты</h3>
+      <img src="img/services_web" alt="изображение предоставляемой услуги: веб-сайты">
+      <p class="services__description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+      <a class="services__button button">Заказать</a>
+    </li>
+    <li class="services__item">
+      <h3 class="services__caption">Приложения</h3>
+      <img src="img/services_web" alt="изображение предоставляемой услуги: приложения">
+      <p class="services__description">Покорите топ-10 приложений в AppStore и Google Play</p>
+      <a class="services__button button">Заказать</a>
+    </li>
+    <li class="services__item">
+      <h3 class="services__caption">Презентации</h3>
+      <img src="img/services_web" alt="изображение предоставляемой услуги: презентации">
+      <p class="services__description">Вы даже не подозреваете,
+        насколько вы изумительны!
+      </p>
+      <a class="services__button button">Заказать</a>
+    </li>
+  </ul>
+</section>
+<section class = "about-us">
+  <h2 class="about-us__caption">
+    <img class="about-us__logo" src="img/about-us_logo.png">
+  <span class="visually-hidden">Мы-это Нёрдс!</span>
+  </h2>
+  <b class="about-us__slogan">Мы — маленькая, но гордая
+    дизайн-студия из Краснодара.
+  </b>
+  <p class="about-us__description">
+    Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+    превыше креатива. Работаем не покладая рук, как роботы.
+  </p>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+  <div class="about-us__our-job our-job">
+    <h3 class="our-job__caption">Выполняем заказы на разработку:</h3>
+    <ul class="our-job__list">
+      <li class="our-job__item">
+        <p class="our-job__description"> Веб-сайтов любой сложности </p>
+      </li>
+      <li class="our-job__item">
+        <p class="our-job__description">Мобильных приложений для iOS и Android</p>
+      </li>
+      <li class="our-job__item">
+        <p class="our-job__description">Слайдшоу и видео для корпоративных презентаций</p>
+      </li>
+    </ul>
+  </div>
 
+  <table class="about-us__in-table in-table">
+    <caption class="in-table__caption">С 2004 года любим точность во всем:</caption>
+<tr class="in-table__stroke">
+  <td class="in-table__cell">
+      <span class="in-table__cell-number">146</span>
+      <span class="in-table__cell-percent">%</span>
+  </td>
+  <td class="in-table__cell">
+    <span class="in-table__cell-number">100</span>
+    <span class="in-table__cell-percent">%</span>
+  </td>
+  <td class="in-table__cell">
+    <span class="in-table__cell-number">50</span>
+    <span class="in-table__cell-percent">%</span>
+  </td>
+</tr>
+    <tr class="in-table__stroke">
+      <td class="in-table__cell">Уровень самоотдачи</td>
+      <td class="in-table__cell">Соблюдение сроков</td>
+      <td class="in-table__cell">Минимальная предоплата</td>
+    </tr>
+
+  </table>
+</section>
+<article class = "partners">
+  <h2 class="visually-hidden">Наши партнёры</h2>
+  <ul class="partners__list">
+    <li class="partners__item">
+      <a class="partners__link">
+        <img src="img/parthers_htmlacademy.png" alt="Логотип нашего партнёра: HTML Academy">
+        <span class="visually-hidden">HTML Academy</span>
+      </a>
+    </li>
+    <li class="partners__item">
+      <a class="partners__link">
+        <img src="img/parthers_borodinski.png" alt="Логотип нашего партнёра: Барбершоп Borodinski">
+        <span class="visually-hidden">Барбершоп Borodinski</span>
+      </a>
+    </li>
+    <li class="partners__item">
+      <a class="partners__link">
+        <img src="img/parthers_pink.png" alt="Логотип нашего партнёра: Приложение Pink">
+        <span class="visually-hidden">Приложение Pink</span>
+      </a>
+    </li>
+    <li class="partners__item">
+      <a class="partners__link">
+        <img src="img/parthers_mishka.png" alt="Логотип нашего партнёра: Магазин Mishka">
+        <span class="visually-hidden">Магазин Mishka</span>
+      </a>
+    </li>
+  </ul>
+</article>
+  </div>
+  <section class="map">
+    <h2 class="visually-hidden">Карта</h2>
+    <div class="container">
+      <section class="contacts">
+        <h2 class="visually-hidden">Контактная информация</h2>
+        <b class="contacts__name">NЁRDS DESIGN STUDIO</b>
+        <p class="contacts__address">
+         191186,Санкт-Петербург, ул. Большая Конюшенная, д. 19/8
+        </p>
+        <p class="contacts__tel">
+          тел. +7 (812) 275-75-75
+        </p>
+        <a class="contacts__button button" href="feedback-form.html">Напишите нам</a>
+      </section>
+    </div>
+  </section>
+</main>
+<footer class = "page-footer">
+  <section class="page-footer__social social">
+    <div class="social__wrapper">
+    <h2 class="social__caption" >Давайте дружить, это выгодно!</h2>
+    <p class="social__description">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+    <ul class = "social__list">
+      <li class = "social__item">
+        <a class = "social__link" href="https://vk.com">
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li class = "social__item">
+        <a class = "social__link" href="https://www.facebook.com">
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+      <li class = "social__item">
+        <a class = "social__link" href="https://www.instagram.com">
+          <span class="visually-hidden">Instagram</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+</footer>
+  <section class="popup">
+<h2 class="popup__caption">Напишите нам</h2>
+    <form class="popup__form form-feedback" action="https://echo.htmlacademy.ru" method="post">
+      <label class="form-feedback__label" for="my-name">Ваше имя:</label>
+      <input class="form-feedback__input" type="text" name="my-name" id="my-name" placeholder="Имя Фамилия">
+      <label class="form-feedback__label" for="email">Ваш e-mail:</label>
+      <input class="form-feedback__input" type="email" name="email" id="email" placeholder="email@example.com">
+      <label class="form-feedback__label" for="comment">Текст письма:</label>
+      <textarea class="form-feedback__input" name="comment" rows="10" id="comment" placeholder="В свободной форме"></textarea>
+      <button class="form-feedback__button button" type="submit">
+        Отправить
+      </button>
+      <button class="form-feedback__button-close" type="button">
+        <span class="visually-hidden">Закрыть форму</span>
+      </button>
+    </form>
+  </section>
   </body>
 </html>
