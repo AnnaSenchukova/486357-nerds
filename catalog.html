@@ -74,20 +74,27 @@
   </fieldset>
   <button class="form__button button" type="submit">Показать</button>
 </form>
-    <form class="form form--sorting" action="https://echo.htmlacademy.ru" method="post" >
-      <fieldset class="form__fieldset">
-        <legend class="form__legend">Сортировать</legend>
-        <input class="visually-hidden" type="radio" name="sorting" id="sorting-price" value="sorting-price">
-        <label class="form__label" for="sorting-price">По цене</label>
-        <input class="visually-hidden" type="radio" name="sorting" id="sorting-type" value="sorting-type">
-        <label class="form__label" for="sorting-type">По типу</label>
-        <input class="visually-hidden" type="radio" name="sorting" id="sorting-name" value="sorting-name">
-        <label class="form__label" for="sorting-name">По названию</label>
-      </fieldset>
-      <button class="form__button-up" type="button"></button>
-      <button class="form__button-down" type="button"></button>
-    </form>
-  <section class="catalog"></section>
+    <section class="catalog">
+    <h2 class="visually-hidden">Каталог</h2>
+    <div class="catalog__sorting sorting-controls">
+      <h3 class="sorting-controls__caption">Сортировать</h3>
+      <ul class="sorting-controls__list">
+        <li class="sorting-controls__item">
+          <button class="sorting-controls__button" type="button">По цене</button>
+        </li>
+        <li class="sorting-controls__item">
+          <button class="sorting-controls__button" type="button">По типу</button>
+        </li>
+        <li class="sorting-controls__item">
+          <button class="sorting-controls__button" type="button">По названию</button>
+        </li>
+      </ul>
+      <div class="sorting-controls__result result">
+      <button class="result__button-up" type="button"></button>
+      <button class="result__button-down" type="button"></button>
+    </div>
+    </div>
+  </section>
   <div class="page-navigation"></div>
 </div>
   <section class="map">
