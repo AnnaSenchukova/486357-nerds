@@ -33,10 +33,60 @@
 <main class="page-main">
   <div class="container">
 <h1 class="page-main__title">Магазин готовых шаблонов</h1>
-<form class="form form-bar">
-
+<form class="form form--bar" action="https://echo.htmlacademy.ru" method="post">
+<fieldset class="form__fieldset">
+  <legend class="form__legend">Стоимость</legend>
+  <div class="form__range range">
+  <div class="range__scale">
+    <div class="range__select"></div>
+  </div>
+    <div class="range__toggle-min"></div>
+    <div class="range__toggle-max"></div>
+  </div>
+  <div class="form__price-control price-control">
+    <label class="price-control__min" for="prise-min">от</label>
+    <input class="price-controls__input" type="text" name="price-min" id="prise-min" value="0">
+    <label class="price-control__max" for="prise-max">до</label>
+    <input class="price-controls__input" type="text" name="price-max" id="prise-max" value="15000">
+  </div>
+</fieldset>
+  <fieldset class="form__fieldset">
+    <legend class="form__legend">Сетка</legend>
+<input class="visually-hidden" type="radio" name="markup" id="markup-adaptive" value="markup-adaptive" checked>
+    <label class="form__label" for="markup-adaptive">Адаптивная</label>
+    <input class="visually-hidden" type="radio" name="markup" id="markup-fixed" value="markup-fixed" checked>
+    <label class="form__label" for="markup-fixed">Фиксированная</label>
+    <input class="visually-hidden" type="radio" name="markup" id="markup-elastic" value="markup-elastic" checked>
+    <label class="form__label" for="markup-elastic">Резиновая</label>
+  </fieldset>
+  <fieldset class="form__fieldset">
+    <legend class="form__legend">Особенности</legend>
+    <input class="visually-hidden" type="checkbox" name="slider" id="slider" checked>
+    <label class="form__label" for="slider">Слайдер</label>
+    <input class="visually-hidden" type="checkbox" name="advantages" id="advantages">
+    <label class="form__label" for="advantages">Блок преимуществ</label>
+    <input class="visually-hidden" type="checkbox" name="news" id="news" checked>
+    <label class="form__label" for="news">Новости</label>
+    <input class="visually-hidden" type="checkbox" name="gallery" id="gallery">
+    <label class="form__label" for="gallery">Галерея</label>
+    <input class="visually-hidden" type="checkbox" name="basket" id="basket">
+    <label class="form__label" for="basket">Корзина</label>
+  </fieldset>
+  <button class="form__button button" type="submit">Показать</button>
 </form>
-    <form class="form form-sorting"></form>
+    <form class="form form--sorting" action="https://echo.htmlacademy.ru" method="post" >
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Сортировать</legend>
+        <input class="visually-hidden" type="radio" name="sorting" id="sorting-price" value="sorting-price">
+        <label class="form__label" for="sorting-price">По цене</label>
+        <input class="visually-hidden" type="radio" name="sorting" id="sorting-type" value="sorting-type">
+        <label class="form__label" for="sorting-type">По типу</label>
+        <input class="visually-hidden" type="radio" name="sorting" id="sorting-name" value="sorting-name">
+        <label class="form__label" for="sorting-name">По названию</label>
+      </fieldset>
+      <button class="form__button-up" type="button"></button>
+      <button class="form__button-down" type="button"></button>
+    </form>
   <section class="catalog"></section>
   <div class="page-navigation"></div>
 </div>
