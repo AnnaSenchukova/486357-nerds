@@ -10,7 +10,6 @@
     <a class="navigation__logo-link" href="index.html">
       <img class="navigation__logo-image" src="img/index_logo.svg" width="160" height="65" alt="Логотип Нёрдс. Переход на главную страницу сайта.">
     </a>
-  </nav>
   <ul class="navigation__list site-list">
     <li class="site-list__item">
       <a class="site-list__link" href="studio.html">Студия</a>
@@ -30,11 +29,12 @@
       <a class="user-list__link" href="basket.html">Корзина</a>
     </li>
   </ul>
+  </nav>
 </header>
 <main class="page-main">
   <div class="container">
     <h1 class="page-main__title">Магазин готовых шаблонов</h1>
-    <form class="form form--bar" action="https://echo.htmlacademy.ru" method="post">
+    <form class="form form--bar" action="https://echo.htmlacademy.ru" method="post" aria-label="Поиск готового шаблона по заданным критериям">
       <fieldset class="form__fieldset">
         <legend class="form__legend">Стоимость</legend>
         <div class="form__range range">
@@ -44,11 +44,11 @@
           <div class="range__toggle-min"></div>
           <div class="range__toggle-max"></div>
         </div>
-        <div class="form__price-control price-control">
+        <div class="form__price-control price-control" aria-label="Перемещайте контрольные точки на шкале, что бы задать ценовой диапазон">
           <label class="price-control__min" for="prise-min">от</label>
-          <input class="price-controls__input" type="text" name="price-min" id="prise-min" value="0">
+          <input class="price-controls__input" type="text" name="price-min" id="prise-min" value="0" aria-label="Введите стоимость от 0 до 15000">
           <label class="price-control__max" for="prise-max">до</label>
-          <input class="price-controls__input" type="text" name="price-max" id="prise-max" value="15000">
+          <input class="price-controls__input" type="text" name="price-max" id="prise-max" value="15000" aria-label="Введите стоимость до 15000">
         </div>
       </fieldset>
       <fieldset class="form__fieldset">
@@ -90,7 +90,7 @@
             <button class="markers__button" type="button">По названию</button>
           </li>
         </ul>
-        <div class="markers__result">
+        <div class="markers__result" aria-label="Навигация по открытой странице каталога">
           <button class="markers__result__button-up" type="button">
             <span class="visually-hidden">Вверх страницы</span>
           </button>
@@ -99,68 +99,68 @@
           </button>
         </div>
       </div>
-      <ul class="catalog__list">
-        <li class="catalog__item">
+      <ul class="catalog__list" aria-label="Готовые шаблоны, предлагаемые дизайн-студией Nёrds для ваших проектов">
+        <li class="catalog__item" aria-label="Карточка готового шаблона">
           <img class="catalog__image" src="img/catalog_sedona.jpg" width="360" height="576" alt="готовый шаблон: Sedona">
-          <div class="catalog__preview">
+          <div class="catalog__preview" aria-label="Подробнее о предложении">
             <a class="catalog__title" href="modalSedona.html">Sedona</a>
             <p class="catalog__description">Информационный сайт для туристов</p>
-            <button class="catalog__button-buy button" type="button">9900 руб</button>
+            <button class="catalog__button-buy button" type="button" aria-label="Нажмите на кнопку, что бы добавить шаблон в вашу корзину">9900 руб</button>
           </div>
         </li>
-        <li class="catalog__item">
+        <li class="catalog__item" aria-label="Карточка готового шаблона">
           <img class="catalog__image" src="img/catalog_pink.jpg" width="360" height="576" alt="готовый шаблон: Pink App">
-          <div class="catalog__preview">
+          <div class="catalog__preview" aria-label="Подробнее о предложении">
             <a class="catalog__title" href="modalPink.html">Pink App</a>
             <p class="catalog__description">
               Продуктовый лендинг приложения для iOS и Android
             </p>
-            <button class="catalog__button-buy button" type="button">9900 руб</button>
+            <button class="catalog__button-buy button" type="button" aria-label="Нажмите на кнопку, что бы добавить шаблон в вашу корзину">9900 руб</button>
           </div>
         </li>
-        <li class="catalog__item">
+        <li class="catalog__item" aria-label="Карточка готового шаблона">
           <img class="catalog__image" src="img/catalog_barbershop.jpg" width="360" height="576" alt="готовый шаблон: Barbershop">
-          <div class="catalog__preview">
+          <div class="catalog__preview" aria-label="Подробнее о предложении">
             <a class="catalog__title" href="modalBarbershop.html">Barbershop</a>
             <p class="catalog__description">
               Сайт салоны красоты. Для мужчин, да.
             </p>
-            <button class="catalog__button-buy button" type="button">9900 руб</button>
+            <button class="catalog__button-buy button" type="button" aria-label="Нажмите на кнопку, что бы добавить шаблон в вашу корзину">9900 руб</button>
           </div>
         </li>
-        <li class="catalog__item">
+        <li class="catalog__item" aria-label="Карточка готового шаблона">
           <img class="catalog__image" src="img/catalog_mishka.jpg" width="360" height="576" alt="готовый шаблон: Mishka">
-          <div class="catalog__preview">
+          <div class="catalog__preview" aria-label="Подробнее о предложении">
             <a class="catalog__title" href="modalMishka.html">Mishka</a>
             <p class="catalog__description">
               Интернет-магазин вязаных игрушек
             </p>
-            <button class="catalog__button-buy button" type="button">9900 руб</button>
+            <button class="catalog__button-buy button" type="button" aria-label="Нажмите на кнопку, что бы добавить шаблон в вашу корзину">9900 руб</button>
           </div>
         </li>
-        <li class="catalog__item">
+        <li class="catalog__item" aria-label="Карточка готового шаблона">
           <img class="catalog__image" src="img/catalog_aplus.jpg"  width="360" height="576" alt="готовый шаблон: A Plus">
-          <div class="catalog__preview">
+          <div class="catalog__preview" aria-label="Подробнее о предложении">
             <a class="catalog__title" href="modalAPlus.html">A Plus</a>
             <p class="catalog__description">
               Лендинг курсов повышения квалификации
             </p>
-            <button class="catalog__button-buy button" type="button">9900 руб</button>
+            <button class="catalog__button-buy button" type="button" aria-label="Нажмите на кнопку, что бы добавить шаблон в вашу корзину">9900 руб</button>
           </div>
         </li>
-        <li class="catalog__item">
+        <li class="catalog__item" aria-label="Карточка готового шаблона">
           <img class="catalog__image" src="img/catalog_kvast.jpg" width="360" height="576" alt="готовый шаблон: Кваст">
-          <div class="catalog__preview">
+          <div class="catalog__preview" aria-label="Подробнее о предложении">
             <a class="catalog__title" href="modalKvast.html">Кваст</a>
             <p class="catalog__description">
               Промо-сайт производителя крафтового кваса
             </p>
-            <button class="catalog__button-buy button" type="button">9900 руб</button>
+            <button class="catalog__button-buy button" type="button" aria-label="Нажмите на кнопку, что бы добавить шаблон в вашу корзину">9900 руб</button>
           </div>
         </li>
       </ul>
     </section>
-    <div class="pagination">
+    <div class="pagination" aria-label="Навигация по страницам каталога">
       <a class="pagination__page link-active">1</a>
       <a class="pagination__page" href="catalogPage2.html">2</a>
       <a class="pagination__page" href="catalogPage3.html">3</a>
@@ -171,8 +171,9 @@
     <h2 class="visually-hidden">Карта</h2>
     <div class="container">
       <section class="contacts">
-        <h2 class="contacts__name">NЁRDS DESIGN STUDIO</h2>
-        <p class="contacts__address">
+        <h2 class="visually-hidden">Контакты</h2>
+        <b class="contacts__name">NЁRDS DESIGN STUDIO</b>
+        <p class="contacts__address" aria-label="Наш адрес">
           191186,Санкт-Петербург, <br>
           ул. Большая Конюшенная, д. 19/8
         </p>
