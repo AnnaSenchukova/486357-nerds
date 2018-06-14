@@ -7,10 +7,10 @@
 <body>
 <header class="page-header">
   <nav class="navigation">
-    <a class="navigation__logo-link link-active"></a>
-    <img class="navigation__logo-image" src="img/index_logo.svg" width="160" height="65" alt="Логотип Нёрдс. Переход на главную страницу сайта.">
-  </nav>
-  <ul class="navigation__list site-list">
+    <a class="navigation__logo-link link-active">
+    <img class="navigation__logo-image" src="img/index_logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс.">
+    </a>
+    <ul class="navigation__list site-list">
     <li class="site-list__item">
       <a class="site-list__link" href="studio.html">Студия</a>
     </li>
@@ -29,6 +29,7 @@
       <a class="user-list__link" href="basket.html">Корзина</a>
     </li>
   </ul>
+  </nav>
 </header>
 <main class="page-main">
   <div class="container">
@@ -61,14 +62,14 @@
       <input class="visually-hidden  slide-1" type="radio" id="principe-1" name="toggle" checked>
       <input class="visually-hidden  slide-2" type="radio" id="principe-2" name="toggle">
       <input class="visually-hidden  slide-3" type="radio" id="principe-3" name="toggle">
-      <div class="slider__controls">
+      <div class="slider__controls"aria-label="Навигация по слайдам с приоритетами">
         <label class="slider-page-1" for="principe-1">Первый слайд</label>
         <label class="slider-page-2" for="principe-2">Второй слайд</label>
         <label class="slider-page-3" for="principe-3">Третий слайд</label>
       </div>
     </section>
     <section class="services">
-      <h2>Мы можем сделать для вас:</h2>
+      <h2 class="visually-hidden">Мы можем сделать для вас:</h2>
       <ul class="services__list">
         <li class="services__item">
           <h3 class="services__caption">Веб-сайты</h3>
@@ -113,10 +114,9 @@
           </li>
         </ul>
       </div>
-
       <div class="about-us__in-number">
         <h3 class="about-us__in-number__caption">С 2004 года любим точность во всем:</h3>
-        <table class="about-us__in-number__table table">
+        <table class="about-us__in-number__table table" aria-label="О нас в цифрах">
           <tr class="table__stroke">
             <th class="table__cell">
               <span class="table__cell-number">146</span>
@@ -169,8 +169,9 @@
     <h2 class="visually-hidden">Карта</h2>
     <div class="container">
       <section class="contacts">
-        <h2 class="contacts__name">NЁRDS DESIGN STUDIO</h2>
-        <p class="contacts__address">
+        <h2 class="visually-hidden">Контакты</h2>
+        <b class="contacts__name">NЁRDS DESIGN STUDIO</b>
+        <p class="contacts__address" aria-label="Наш адрес">
           191186,Санкт-Петербург, <br>
           ул. Большая Конюшенная, д. 19/8
         </p>
