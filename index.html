@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Нёрдс</title>
+  <link rel="stylesheet" href="css/normalize_min.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
 <header class="page-header">
@@ -35,6 +37,9 @@
   <div class="container">
     <h1 class="visually-hidden">NЁRDS DESIGN STUDIO</h1>
     <section class="slider">
+      <input class="slide-1" type="radio" id="principe-1" name="toggle" checked>
+      <input class="slide-2" type="radio" id="principe-2" name="toggle">
+      <input class="slide-3" type="radio" id="principe-3" name="toggle">
       <h2 class="visually-hidden">Наши принципы</h2>
       <ul class="slider__list">
         <li class="slider__item slider__item--principe-cash">
@@ -51,7 +56,7 @@
             для расчета идеальных пропорций.</p>
           <a class="slider__button button">Узнать больше</a>
         </li>
-        <li class="slider__item slide__item--principe-night">
+        <li class="slider__item slider__item--principe-night">
           <h3 class="slider__caption">Только ночь,
             только хардкор</h3>
           <p class="slider__description">Работать днем, как все? Мы против этого.
@@ -59,10 +64,7 @@
           <a class="slider__button button">Узнать больше</a>
         </li>
       </ul>
-      <input class="visually-hidden  slide-1" type="radio" id="principe-1" name="toggle" checked>
-      <input class="visually-hidden  slide-2" type="radio" id="principe-2" name="toggle">
-      <input class="visually-hidden  slide-3" type="radio" id="principe-3" name="toggle">
-      <div class="slider__controls"aria-label="Навигация по слайдам с приоритетами">
+      <div class="slider__controls" aria-label="Навигация по слайдам с приоритетами">
         <label class="slider-page-1" for="principe-1">Первый слайд</label>
         <label class="slider-page-2" for="principe-2">Второй слайд</label>
         <label class="slider-page-3" for="principe-3">Третий слайд</label>
