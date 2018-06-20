@@ -38,7 +38,7 @@
   <div class="container">
     <h1 class="page-main__title">Магазин готовых шаблонов</h1>
     <form class="form form--bar" action="https://echo.htmlacademy.ru" method="post" aria-label="Поиск готового шаблона по заданным критериям">
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__fieldset--price">
         <legend class="form__legend">Стоимость</legend>
         <div class="form__range range">
           <div class="range__scale">
@@ -48,32 +48,32 @@
           <div class="range__toggle-max" tabindex="1"></div>
         </div>
         <div class="form__price-control price-control" aria-label="Перемещайте контрольные точки на шкале, что бы задать ценовой диапазон">
-          <label class="price-control__min" for="prise-min">от</label>
-          <input class="price-controls__input" type="text" name="price-min" id="prise-min" value="0" aria-label="Введите стоимость от 0 до 15000">
-          <label class="price-control__max" for="prise-max">до</label>
-          <input class="price-controls__input" type="text" name="price-max" id="prise-max" value="15000" aria-label="Введите стоимость до 15000">
+          <label class="price-control__label" for="prise-min">от</label>
+          <input class="price-control__input" type="text" name="price-min" id="prise-min" value="0" aria-label="Введите стоимость от 0 до 15000">
+          <label class="price-control__label" for="prise-max">до</label>
+          <input class="price-control__input" type="text" name="price-max" id="prise-max" value="15000" aria-label="Введите стоимость до 15000">
         </div>
       </fieldset>
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__fieldset--markup">
         <legend class="form__legend">Сетка</legend>
-        <input class="visually-hidden" type="radio" name="markup" id="markup-adaptive" value="markup-adaptive" checked>
+        <input class="form__input-markup visually-hidden" type="radio" name="markup" id="markup-adaptive" value="markup-adaptive" checked>
         <label class="form__label" for="markup-adaptive">Адаптивная</label>
-        <input class="visually-hidden" type="radio" name="markup" id="markup-fixed" value="markup-fixed">
+        <input class="form__input-markup visually-hidden" type="radio" name="markup" id="markup-fixed" value="markup-fixed">
         <label class="form__label" for="markup-fixed">Фиксированная</label>
-        <input class="visually-hidden" type="radio" name="markup" id="markup-elastic" value="markup-elastic">
+        <input class="form__input-markup visually-hidden" type="radio" name="markup" id="markup-elastic" value="markup-elastic">
         <label class="form__label" for="markup-elastic">Резиновая</label>
       </fieldset>
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__fieldset--features">
         <legend class="form__legend">Особенности</legend>
-        <input class="visually-hidden" type="checkbox" name="slider" id="slider" checked>
+        <input class="form__input-features visually-hidden" type="checkbox" name="slider" id="slider" checked>
         <label class="form__label" for="slider">Слайдер</label>
-        <input class="visually-hidden" type="checkbox" name="advantages" id="advantages">
+        <input class="form__input-features visually-hidden" type="checkbox" name="advantages" id="advantages">
         <label class="form__label" for="advantages">Блок преимуществ</label>
-        <input class="visually-hidden" type="checkbox" name="news" id="news" checked>
+        <input class="form__input-features visually-hidden" type="checkbox" name="news" id="news" checked>
         <label class="form__label" for="news">Новости</label>
-        <input class="visually-hidden" type="checkbox" name="gallery" id="gallery">
+        <input class="form__input-features visually-hidden" type="checkbox" name="gallery" id="gallery">
         <label class="form__label" for="gallery">Галерея</label>
-        <input class="visually-hidden" type="checkbox" name="basket" id="basket">
+        <input class="form__input-features visually-hidden" type="checkbox" name="basket" id="basket">
         <label class="form__label" for="basket">Корзина</label>
       </fieldset>
       <button class="form__button button" type="submit">Показать</button>
@@ -193,23 +193,23 @@
     <h2 class="visually-hidden">Мы в социальных сетях:</h2>
     <ul class="social__list">
       <li class="social__item">
-        <a class="social__link" href="https://vk.com">
+        <a class="social__link social__link--vk" href="https://vk.com">
           <span class="visually-hidden">Вконтакте</span>
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link" href="https://www.facebook.com">
+        <a class="social__link social__link--fb" href="https://www.facebook.com">
           <span class="visually-hidden">Facebook</span>
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link" href="https://www.instagram.com">
+        <a class="social__link social__link--inst" href="https://www.instagram.com">
           <span class="visually-hidden">Instagram</span>
         </a>
       </li>
     </ul>
     <div class="social__wrapper">
-      <b class="social__caption">Давайте дружить, это выгодно!</b>
+      <b class="social__slogan">Давайте дружить, это выгодно!</b>
       <p class="social__description">Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </section>
