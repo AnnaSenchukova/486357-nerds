@@ -39,40 +39,45 @@
 <main class="page-main">
   <div class="container">
     <h1 class="visually-hidden">NЁRDS DESIGN STUDIO</h1>
+  </div>
     <section class="slider">
-      <input class="slide-1" type="radio" id="principe-1" name="toggle" checked>
-      <input class="slide-2" type="radio" id="principe-2" name="toggle">
-      <input class="slide-3" type="radio" id="principe-3" name="toggle">
+      <div class="container">
+      <input class="slider__check slide-1" type="radio" id="principe-1" name="toggle" checked>
+      <input class="slider__check slide-2" type="radio" id="principe-2" name="toggle">
+      <input class="slider__check slide-3" type="radio" id="principe-3" name="toggle">
+        <div class="slider__controls " aria-label="Навигация по слайдам с приоритетами">
+          <label class="slider__controls-button slider-page-1" for="principe-1">Первый слайд</label>
+          <label class="slider__controls-button slider-page-2" for="principe-2">Второй слайд</label>
+          <label class="slider__controls-button slider-page-3" for="principe-3">Третий слайд</label>
+        </div>
       <h2 class="visually-hidden">Наши принципы</h2>
       <ul class="slider__list">
         <li class="slider__item slider__item--principe-cash">
           <h3 class="slider__caption">Долго, дорого,
             скрупулезно.</h3>
-          <p class="slider__description">Математически выверенный дизайн
+          <p class="slider__description">Математически выверенный дизайн<br>
             для вашего сайта или мобильного приложения.</p>
           <a class="slider__button button">Узнать больше</a>
         </li>
         <li class="slider__item slider__item--principe-math">
           <h3 class="slider__caption">Любим математику
             как никто другой</h3>
-          <p class="slider__description">Никакого креатива, только математические формулы
+          <p class="slider__description">Никакого креатива, только математические формулы<br>
             для расчета идеальных пропорций.</p>
           <a class="slider__button button">Узнать больше</a>
         </li>
         <li class="slider__item slider__item--principe-night">
           <h3 class="slider__caption">Только ночь,
             только хардкор</h3>
-          <p class="slider__description">Работать днем, как все? Мы против этого.
+          <p class="slider__description">Работать днем, как все? Мы против этого.<br>
             Ближе к полуночи работа только начинается.</p>
           <a class="slider__button button">Узнать больше</a>
         </li>
       </ul>
-      <div class="slider__controls" aria-label="Навигация по слайдам с приоритетами">
-        <label class="slider-page-1" for="principe-1">Первый слайд</label>
-        <label class="slider-page-2" for="principe-2">Второй слайд</label>
-        <label class="slider-page-3" for="principe-3">Третий слайд</label>
+
       </div>
     </section>
+  <div class="container">
     <section class="services">
       <h2 class="visually-hidden">Мы можем сделать для вас:</h2>
       <ul class="services__list">
