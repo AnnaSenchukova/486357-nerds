@@ -42,23 +42,23 @@
   <div class="container container--catalog">
     <form class="form form--bar" action="https://echo.htmlacademy.ru" method="post" aria-label="Поиск готового шаблона по заданным критериям">
       <fieldset class="form__fieldset form__fieldset--price">
-        <legend class="form__legend">Стоимость</legend>
+        <legend class="form__legend">Стоимость:</legend>
         <div class="form__range range">
           <div class="range__scale">
             <div class="range__select"></div>
           </div>
-          <div class="range__toggle-min" tabindex="1"></div>
-          <div class="range__toggle-max" tabindex="1"></div>
+          <div class="range__toggle toggle-min" tabindex="1"></div>
+          <div class="range__toggle toggle-max" tabindex="1"></div>
         </div>
         <div class="form__price-control price-control" aria-label="Перемещайте контрольные точки на шкале, что бы задать ценовой диапазон">
           <label class="price-control__label" for="prise-min">от</label>
           <input class="price-control__input" type="text" name="price-min" id="prise-min" value="0" aria-label="Введите стоимость от 0 до 15000">
           <label class="price-control__label" for="prise-max">до</label>
-          <input class="price-control__input" type="text" name="price-max" id="prise-max" value="15000" aria-label="Введите стоимость до 15000">
+          <input class="price-control__input" type="text" name="price-max" id="prise-max" value="15 000" aria-label="Введите стоимость до 15000">
         </div>
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--markup">
-        <legend class="form__legend">Сетка</legend>
+        <legend class="form__legend">Сетка:</legend>
         <input class="form__input-markup visually-hidden" type="radio" name="markup" id="markup-adaptive" value="markup-adaptive" checked>
         <label class="form__label" for="markup-adaptive">Адаптивная</label>
         <input class="form__input-markup visually-hidden" type="radio" name="markup" id="markup-fixed" value="markup-fixed">
@@ -67,7 +67,7 @@
         <label class="form__label" for="markup-elastic">Резиновая</label>
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--features">
-        <legend class="form__legend">Особенности</legend>
+        <legend class="form__legend">Особенности:</legend>
         <input class="form__input-features visually-hidden" type="checkbox" name="slider" id="slider" checked>
         <label class="form__label" for="slider">Слайдер</label>
         <input class="form__input-features visually-hidden" type="checkbox" name="advantages" id="advantages">
@@ -87,17 +87,19 @@
         <fieldset class="markers__fieldset">
           <div class="markers__wrapper">
         <legend class="markers__legend">Сортировать:</legend>
-        <button class="markers__button" type="button">По цене</button>
+
+        <button class="markers__button active" type="button">По цене</button>
         <button class="markers__button" type="button">По типу</button>
         <button class="markers__button" type="button">По названию</button>
+
           </div>
 
         </fieldset>
         <fieldset class="markers__fieldset markers__result" aria-label="Навигация по открытой странице каталога">
-          <button class="markers__result__button-up" type="button">
+          <button class="markers__result__button-up active" type="button">
             <span class="visually-hidden">Вверх страницы</span>
           </button>
-          <button class="markers__result__button-down" type="button">
+          <button class="markers__result__button-down " type="button">
             <span class="visually-hidden">Вниз страницы</span>
           </button>
         </fieldset>
@@ -221,7 +223,9 @@
   </section>
   </div>
 </footer>
+
 <section class="popup">
+
   <h2 class="popup__caption">Напишите нам</h2>
   <form class="popup__form" action="https://echo.htmlacademy.ru" method="post">
     <label class="popup__label" for="my-name">Ваше имя:
@@ -241,6 +245,8 @@
       <span class="visually-hidden">Закрыть форму</span>
     </button>
   </form>
+
 </section>
+
 </body>
 </html>
