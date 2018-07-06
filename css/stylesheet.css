@@ -91,7 +91,8 @@ img {
 
 
 .button {
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
 
   width: -webkit-fit-content;
 
@@ -151,6 +152,8 @@ img {
 .navigation__logo-link {
   z-index: 2;
 
+  width: 160px;
+
   padding-top: 50px;
 }
 
@@ -187,6 +190,8 @@ img {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 
   min-width: 41.5%;
 }
@@ -207,6 +212,8 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+
+  max-width: 120px;
 
   padding-top: 15px;
   padding-bottom: 3px;
@@ -616,6 +623,10 @@ img {
   list-style: none;
 }
 
+.our-job {
+  max-width: 660px;
+}
+
 .our-job__caption,
 .in-number__caption {
   margin: 0;
@@ -652,6 +663,10 @@ img {
   background-color: #fb565a;
 }
 
+.in-number {
+  max-width: 365px;
+}
+
 .in-number__caption {
   padding-left: 20px;
   padding-bottom: 44px;
@@ -674,7 +689,7 @@ img {
   text-align: start;
 
   width: 120px;
-  height: 35px;
+  min-height: 35px;
 
   margin-bottom: 21px;
 }
@@ -754,6 +769,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -948,12 +965,16 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+
+  max-width: 300px;
 
   margin: 0;
   padding: 0;
@@ -976,6 +997,8 @@ img {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
+  max-width: 690px;
 
   padding-left: 137px;
 }
@@ -1286,6 +1309,8 @@ img {
 .form__fieldset,
 .markers__fieldset {
   position: relative;
+
+  min-width: 44px;
 
   margin: 0;
   padding: 0;
@@ -1614,6 +1639,8 @@ img {
 }
 
 .markers__button {
+  max-width: 103px;
+
   padding: 0;
   padding-top: 5px;
 
@@ -1807,7 +1834,7 @@ img {
   align-items: center;
 
   width: 100%;
-  height: 230px;
+  min-height: 230px;
 
   padding: 0 60px;
   padding-top: 35px;
@@ -1842,7 +1869,7 @@ img {
 }
 
 .catalog__button-buy {
-  width: 200px;
+  min-width: 200px;
 }
 
 .catalog__item:hover .catalog__preview {
@@ -1859,6 +1886,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
@@ -1872,6 +1901,8 @@ img {
 }
 
 .pagination__page {
+  max-width: 260px;
+
   margin-right: 11px;
   padding: 0 21px;
   padding-top: 17px;
@@ -1896,6 +1927,8 @@ img {
 }
 
 .pagination__next {
+  max-width: 260px;
+
   padding: 0 77px;
   padding-top: 17px;
   padding-bottom: 16px;
