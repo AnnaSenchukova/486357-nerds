@@ -1104,9 +1104,102 @@ img {
 
 
 
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
 
 .popup {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 14.45%;
 
@@ -1116,13 +1209,25 @@ img {
   width: 960px;
   height: 590px;
 
-  margin-top: -771px;
   padding: 0 100px;
   padding-top: 67px;
 
   background-color: #ffffff;
   -webkit-box-shadow: 0 20px 40px 0px rgba(0, 1, 1, 0.75);
   box-shadow: 0 20px 40px 0px rgba(0, 1, 1, 0.75);
+}
+
+.popup--show {
+  display: block;
+
+  -webkit-animation: bounce 0.6s;
+
+  animation: bounce 0.6s;
+}
+
+.popup--error {
+  -webkit-animation: shake 0.6s;
+  animation: shake 0.6s;
 }
 
 .popup__caption {
@@ -1188,9 +1293,11 @@ img {
 }
 
 .popup__input:focus {
+  color: #000000;
+
   border-color: #000000;
 }
-
+.popup__input:invalid,
 .popup__input--error {
   color: #e74246;
 
