@@ -92,12 +92,14 @@
       <h2 class="visually-hidden">Каталог</h2>
       <form class="catalog__markers markers">
         <fieldset class="markers__fieldset">
-          <div class="markers__wrapper">
-            <legend class="markers__legend">Сортировать:</legend>
+          <div class = "markers__wrapper">
+          <legend class="markers__legend">Сортировать:</legend>
+          <div class="markers__wrapper-button">
             <button class="markers__button active" type="button">По цене</button>
             <button class="markers__button" type="button">По типу</button>
             <button class="markers__button" type="button">По названию</button>
           </div>
+        </div>
         </fieldset>
         <fieldset class="markers__fieldset markers__result" aria-label="Навигация по открытой странице каталога">
           <button class="markers__result__button-up active" type="button">
@@ -205,7 +207,6 @@
   </div>
   <section class="map">
     <h2 class="visually-hidden">Карта</h2>
-    <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/-/CBuNz2t2dA" width="1200" height="461"></iframe>
     <div class="map__image"></div>
     <div class="container">
       <section class="contacts">
