@@ -90,26 +90,24 @@
     </form>
     <section class="catalog">
       <h2 class="visually-hidden">Каталог</h2>
-      <form class="catalog__markers markers">
-        <fieldset class="markers__fieldset">
-          <div class = "markers__wrapper">
-          <legend class="markers__legend">Сортировать:</legend>
+      <section class="markers">
+        <h2 class="markers__caption">Сортировать:</h2>
+        <form class="markers__form">
           <div class="markers__wrapper-button">
             <button class="markers__button active" type="button">По цене</button>
             <button class="markers__button" type="button">По типу</button>
             <button class="markers__button" type="button">По названию</button>
           </div>
-        </div>
-        </fieldset>
-        <fieldset class="markers__fieldset markers__result" aria-label="Навигация по открытой странице каталога">
-          <button class="markers__result__button-up active" type="button">
-            <span class="visually-hidden">Вверх страницы</span>
-          </button>
-          <button class="markers__result__button-down " type="button">
-            <span class="visually-hidden">Вниз страницы</span>
-          </button>
-        </fieldset>
-      </form>
+          <div class="markers__result" aria-label="Навигация по открытой странице каталога">
+            <button class="markers__result__button-up active" type="button">
+              <span class="visually-hidden">Вверх страницы</span>
+            </button>
+            <button class="markers__result__button-down" type="button">
+              <span class="visually-hidden">Вниз страницы</span>
+            </button>
+          </div>
+        </form>
+      </section>
       <ul class="catalog__list" aria-label="Готовые шаблоны, предлагаемые дизайн-студией Nёrds для ваших проектов">
         <li class="catalog__item" aria-label="Карточка готового шаблона">
           <img class="catalog__image" src="img/catalog_sedona.jpg" width="360" height="576"
