@@ -4,26 +4,26 @@ var buttonClosedPopup = popup.querySelector('.popup__button-close');
 
 var form = popup.querySelector('.popup__form');
 var inputForm = form.querySelectorAll('.popup__input');
-var inputEnterName = form.querySelector('#my-name');
-var inputEnterEmail = form.querySelector('#email');
-var inputEnterComment = form.querySelector('#comment');
+var inputEnterName = form.querySelector('[name=my-name]');
+var inputEnterEmail = form.querySelector('[name=email]');
+var inputEnterComment = form.querySelector('[name=comment]');
 
 var isStorageSupport = true;
 var storageSelf = '';
 var storagePost = '';
 
 try {
-  storageSelf = localStorage.getItem('inputEnterName');
-  storagePost = localStorage.getItem('inputEnterEmail');
+  storageSelf = localStorage.getItem('self');
+  storagePost = localStorage.getItem('post');
 } catch (err) {
   isStorageSupport = false;
 }
 
 var onPopupEscPress = function (evt) {
-  if(evt.keyCode === 27) {
+  if (evt.keyCode === 27) {
     evt.preventDefault();
 
-    if (popup.classList.contains('popup--show')){
+    if (popup.classList.contains('popup--show')) {
       closePopup();
     }
   }
@@ -32,20 +32,6 @@ var onPopupEscPress = function (evt) {
 var onPopupButtonOpened = function (evt) {
   evt.preventDefault();
   openPopup();
-
-  if (storageSelf) {
-    inputEnterName.value = storageSelf;
-    inputEnterEmail.focus();
-  }else{
-    inputEnterName.focus();
-  }
-
-  if (storagePost) {
-    inputEnterEmail.value = storagePost;
-    inputEnterComment.focus();
-  } else {
-    inputEnterEmail.focus();
-  }
 };
 
 var onPopupButtonClosed = function (evt) {
@@ -53,13 +39,12 @@ var onPopupButtonClosed = function (evt) {
   closePopup();
 };
 
-var openPopup = function() {
+var openPopup = function () {
   popup.classList.add('popup--show');
-  inputEnterName.focus();
   document.addEventListener('keydown', onPopupEscPress);
 };
 
-var closePopup = function() {
+var closePopup = function () {
   popup.classList.remove('popup--show');
   popup.classList.remove('popup--error');
   inputForm.classList.remove('popup__input--error');
@@ -72,49 +57,50 @@ buttonOpenedPopup.addEventListener('click', onPopupButtonOpened);
 buttonClosedPopup.addEventListener('click', onPopupButtonClosed);
 
 buttonClosedPopup.addEventListener('keydown', function (evt) {
-  if(evt.keyCode === 13) {
-  onPopupButtonClosed();
+  if (evt.keyCode === 13) {
+    onPopupButtonClosed();
   }
 });
 
 buttonOpenedPopup.addEventListener('keydown', function (evt) {
-  if(evt.keyCode === 13){
-onPopupButtonOpened();
+  if (evt.keyCode === 13) {
+    onPopupButtonOpened();
   }
 });
 
 form.addEventListener('submit', function (evt) {
 
   if (!inputEnterName.value) {
-      inputEnterName.classList.add('popup__input--error');
-    } else {
-      inputEnterName.classList.remove('popup__input--error');
-    }
+    evt.preventDefault();
+    inputEnterName.classList.add('popup__input--error');
+  } else {
+    inputEnterName.classList.remove('popup__input--error');
+  }
 
-    if (!inputEnterEmail.value) {
-      inputEnterEmail.classList.add('popup__input--error');
-    } else {
-      inputEnterEmail.classList.remove('popup__input--error');
-    }
+  if (!inputEnterEmail.value) {
+    evt.preventDefault();
+    inputEnterEmail.classList.add('popup__input--error');
+  } else {
+    inputEnterEmail.classList.remove('popup__input--error');
+  }
 
-    if (!inputEnterComment.value && inputEnterComment.value !== ('В свободной форме')) {
-      inputEnterComment.classList.add('popup__input--error');
-    } else {
-      inputEnterComment.classList.remove('popup__input--error');
-    }
+  if (!inputEnterComment.value && inputEnterComment.value !== ('В свободной форме')) {
+    evt.preventDefault();
+    inputEnterComment.classList.add('popup__input--error');
+  } else {
+    inputEnterComment.classList.remove('popup__input--error');
+  }
 
-  if (!inputEnterName.value || !inputEnterEmail.value || !inputEnterComment.value && inputEnterComment.value !== ('В свободной форме') ) {
+  if (!inputEnterName.value || !inputEnterEmail.value || !inputEnterComment.value && inputEnterComment.value !== ('В свободной форме')) {
     evt.preventDefault();
     console.log(' Заполните все поля формы перед отправкой!');
     popup.classList.remove('popup--error');
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add('popup--error');
-  }else {
+  } else {
     if (isStorageSupport) {
-      localStorage.setItem('inputEnterName', inputEnterName.value);
-      localStorage.setItem('inputEnterEmail', inputEnterEmail.value);
+      localStorage.setItem('self', inputEnterName.value);
+      localStorage.setItem('post', inputEnterEmail.value);
     }
   }
 });
-
-
