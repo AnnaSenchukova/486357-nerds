@@ -1,0 +1,1 @@
+"use strict";function initMap(){var e={zoom:17,center:new google.maps.LatLng(59.93913,30.321476)},o=new google.maps.Map(document.querySelector(".map__image"),e);new google.maps.Marker({map:o,position:new google.maps.LatLng(59.938723,30.323785),icon:"img/map_pointer.png",title:"Большая Конюшенная, д.19/8"})}
