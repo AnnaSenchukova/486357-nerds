@@ -906,6 +906,8 @@ img {
 
 .contacts__address,
 .contacts__tel {
+  max-width: 210px;
+
   margin: 0;
   padding: 0;
   padding-bottom: 18px;
@@ -1979,6 +1981,12 @@ img {
 
   line-height: 18px;
   color: #666666;
+}
+
+.catalog__description--sedona,
+.catalog__description--barbershop,
+.catalog__description--mishka {
+  max-width: 200px;
 }
 
 .catalog__button-buy {
