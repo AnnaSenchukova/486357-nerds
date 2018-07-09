@@ -81,7 +81,7 @@ img {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 
-  width: 1200px;
+  max-width: 1200px;
 
   margin: 0 auto;
   padding: 0 20px;
@@ -828,6 +828,7 @@ img {
 .map {
   position: relative;
 
+
   min-height: 416px;
 
   background-color: #e9e5dc;
@@ -850,7 +851,7 @@ img {
   outline: none;
 }
 
-.map__iframe {
+.map__image {
   position: absolute;
 
   z-index: 5;
