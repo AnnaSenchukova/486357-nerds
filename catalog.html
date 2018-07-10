@@ -61,29 +61,51 @@
         </div>
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--markup">
+
         <legend class="form__legend">Сетка:</legend>
+        <ul class="form__list">
+          <li class="form__item">
         <input class="form__input-markup visually-hidden" type="radio" name="markup" id="markup-adaptive"
                value="markup-adaptive" checked>
         <label class="form__label" for="markup-adaptive">Адаптивная</label>
+          </li>
+          <li class="form__item">
         <input class="form__input-markup visually-hidden" type="radio" name="markup" id="markup-fixed"
                value="markup-fixed">
         <label class="form__label" for="markup-fixed">Фиксированная</label>
+          </li>
+          <li class="form__item">
         <input class="form__input-markup visually-hidden" type="radio" name="markup" id="markup-elastic"
                value="markup-elastic" disabled checked>
         <label class="form__label" for="markup-elastic">Резиновая</label>
+          </li>
+        </ul>
+
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--features">
         <legend class="form__legend">Особенности:</legend>
+        <ul class="form__list">
+          <li class="form__item">
         <input class="form__input-features visually-hidden" type="checkbox" name="slider" id="slider" checked>
         <label class="form__label" for="slider">Слайдер</label>
+          </li>
+          <li class="form__item">
         <input class="form__input-features visually-hidden" type="checkbox" name="advantages" id="advantages">
         <label class="form__label" for="advantages">Блок преимуществ</label>
+          </li>
+          <li class="form__item">
         <input class="form__input-features visually-hidden" type="checkbox" name="news" id="news" checked>
         <label class="form__label" for="news">Новости</label>
+          </li>
+          <li class="form__item" >
         <input class="form__input-features visually-hidden" type="checkbox" name="gallery" id="gallery">
         <label class="form__label" for="gallery">Галерея</label>
+          </li>
+          <li class="form__item">
         <input class="form__input-features visually-hidden" type="checkbox" name="basket" id="basket" disabled checked>
         <label class="form__label" for="basket">Корзина</label>
+          </li>
+        </ul>
       </fieldset>
       <button class="form__button button" type="submit">Показать</button>
     </form>

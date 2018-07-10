@@ -36,6 +36,8 @@ html {
 }
 
 body {
+  min-width: 1200px;
+
   margin: 0;
   padding: 0;
 
@@ -82,7 +84,7 @@ img {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 
-  max-width: 1200px;
+  width: 1200px;
 
   margin: 0 auto;
   padding: 0 20px;
@@ -419,7 +421,7 @@ img {
 }
 
 .slider__button {
-  width: 241px;
+  width: 242px;
   padding-right: 55px;
   padding-left: 54px;
   padding-bottom: 15px;
@@ -688,7 +690,7 @@ img {
   vertical-align: top;
   text-align: start;
 
-  width: 120px;
+  width: 112px;
   min-height: 35px;
 
   margin-bottom: 21px;
@@ -744,25 +746,23 @@ img {
 
 .partners__item {
   position: relative;
-
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
+  flex-grow: 2;
 
-  width: 300px;
+  width: inherit;
   height: 100%;
 }
 
 .partners__item:last-child,
 .partners__item:first-child {
-  width: 280px;
+  flex-grow: 1;
 }
 
 .partners__link {
@@ -779,6 +779,7 @@ img {
   height: 100%;
 
   opacity: 0.2;
+
 }
 
 .partners__item:last-child .partners__link {
@@ -1204,7 +1205,9 @@ img {
 .popup {
   position: fixed;
   top: 0;
-  left: 14.45%;
+  left: 0;
+  bottom: 0;
+  right: 0;
 
   display: none;
   z-index: 100;
@@ -1212,6 +1215,7 @@ img {
   width: 960px;
   height: 590px;
 
+  margin: auto;
   padding: 0 100px;
   padding-top: 67px;
 
@@ -1449,6 +1453,7 @@ img {
 .form__label {
   line-height: 20px;
   color: #283136;
+  position: relative;
 }
 
 .form__fieldset--price {
@@ -1575,18 +1580,28 @@ img {
   padding-bottom: 48px;
 }
 
-.form__fieldset--features .form__label,
-.form__fieldset--markup .form__label {
-  position: relative;
+.form__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
-.form__fieldset--markup .form__label:not(:last-child) {
+.form__item {
+  width: 100%;
+}
+
+.form__fieldset--markup .form__item:not(:last-child) {
   padding-bottom: 15px;
 }
 
-.form__fieldset--features .form__label:not(:last-child) {
+.form__fieldset--features .form__item:not(:last-child) {
   padding-bottom: 17px;
 }
+
+
+
+
 
 .form__input-markup,
 .form__input-features {
@@ -1609,6 +1624,7 @@ img {
   width: 23px;
   height: 23px;
 
+  margin-top: 1px;
   margin-right: 13px;
 
   border: 2px solid #000000;
@@ -1646,6 +1662,7 @@ img {
   height: 9px;
 
   margin: 8px;
+  margin-top: 6px;
 
 
   background-color: #4d4d4d;
@@ -1689,15 +1706,22 @@ img {
 }
 */
 
-.form__input-markup:hover + .form__label {
-  color: #000000;
-}
 
+
+
+
+
+
+.form__input-markup:hover + .form__item,
 .form__input-markup:hover + .form__label::before,
 .form__input-features:hover + .form__label::before,
 .form__input-markup:hover + .form__label::after,
 .form__input-features:hover + .form__label::after {
   opacity: 1;
+}
+
+.form__input-markup:hover + .form__label {
+  color: #000000;
 }
 
 .form__input-markup:disabled + .form__label,
@@ -1721,6 +1745,12 @@ opacity: 0.1;
 .form__input-features:checked + .form__label::before {
  opacity: 0;
 }
+
+
+
+
+
+
 
 
 
