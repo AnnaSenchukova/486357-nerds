@@ -1448,6 +1448,7 @@ img {
 
 .form__label {
   line-height: 20px;
+  color: #283136;
 }
 
 .form__fieldset--price {
@@ -1610,7 +1611,7 @@ img {
 
   margin-right: 13px;
 
-  border: 2px solid #4d4d4d;
+  border: 2px solid #000000;
   border-radius: 3px;
 
   opacity: 0.4;
@@ -1646,6 +1647,7 @@ img {
 
   margin: 8px;
 
+
   background-color: #4d4d4d;
   border-radius: 50%;
 
@@ -1669,6 +1671,7 @@ img {
   opacity: 0.4;
 }
 
+/*
 .form__input-markup:hover + .form__label::before,
 .form__input-features:hover + .form__label::before,
 .form__input-markup:hover + .form__label::after,
@@ -1682,8 +1685,44 @@ img {
 .form__input-features:disabled + .form__label::before,
 .form__input-markup:disabled + .form__label::after,
 .form__input-features:disabled + .form__label::after {
+  opacity:1;
+}
+*/
+
+.form__input-markup:hover + .form__label {
+  color: #000000;
+}
+
+.form__input-markup:hover + .form__label::before,
+.form__input-features:hover + .form__label::before,
+.form__input-markup:hover + .form__label::after,
+.form__input-features:hover + .form__label::after {
+  opacity: 1;
+}
+
+.form__input-markup:disabled + .form__label,
+.form__input-features:disabled + .form__label {
+  color: rgba(40, 49, 54, 0.3);
+}
+
+
+
+.form__input-markup:disabled + .form__label::before,
+.form__input-markup:disabled + .form__label::after {
+opacity: 0.1;
+}
+
+
+.form__input-features:disabled + .form__label::before,
+.form__input-features:disabled + .form__label::after {
   opacity: 0.1;
 }
+
+.form__input-features:checked + .form__label::before {
+ opacity: 0;
+}
+
+
 
 .form__button,
 .pagination__next {
@@ -2020,6 +2059,7 @@ img {
 
   background-color: transparent;
   border: 3px solid #dbdbdb;
+  box-shadow: none;
 }
 
 .pagination__page {
@@ -2038,14 +2078,18 @@ img {
   border-radius: 5px;
 }
 
-.pagination__page:hover {
+.pagination__page:hover:not(.link-active) {
   background-color: #dfdfdf;
 }
 
-.pagination__page:active {
+.pagination__page:active:not(.link-active){
   color: rgba(0, 0, 0, 0.3);
 
   background-color: #bfbfbf;
+
+
+
+
 }
 
 .pagination__next {
