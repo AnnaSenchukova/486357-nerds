@@ -961,6 +961,8 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+
+  width: 100%;
 }
 
 
@@ -1002,7 +1004,7 @@ img {
   -ms-flex-pack: justify;
   justify-content: space-between;
 
-  max-width: 690px;
+  max-width: 695px;
 
   padding-left: 137px;
 }
@@ -1031,6 +1033,7 @@ img {
   left: 35%;
 
   display: inline-block;
+  vertical-align: middle;
 
   width: 26px;
   height: 15px;
@@ -1048,6 +1051,7 @@ img {
   left: 44%;
 
   display: inline-block;
+  vertical-align: middle;
 
   width: 12px;
   height: 22px;
@@ -1065,6 +1069,7 @@ img {
   left: 36%;
 
   display: inline-block;
+  vertical-align: middle;
 
   width: 21px;
   height: 21px;
