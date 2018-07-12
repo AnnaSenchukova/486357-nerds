@@ -2,7 +2,9 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>HTML Academy: Нёрдс</title>
+  <title>
+    HTML Academy: Нёрдс
+  </title>
   <link rel="stylesheet" href="css/normalize_min.css" type="text/css">
   <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
 </head>
@@ -11,38 +13,50 @@
   <div class="container">
     <nav class="navigation">
       <a href="index.html" class="navigation__logo-link">
-        <img class="navigation__logo-image" src="img/index_logo.svg" width="160" height="65"
-             alt="Логотип дизайн-студии Нёрдс.">
+        <img class="navigation__logo-image" src="img/index_logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс.">
       </a>
       <ul class="navigation__list site-list">
         <li class="site-list__item">
-          <a class="site-list__link" href="studio.html">Студия</a>
+          <a class="site-list__link" href="studio.html">
+            Студия
+          </a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="clients.html">Клиенты</a>
+          <a class="site-list__link" href="clients.html">
+            Клиенты
+          </a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link link-active">Магазин</a>
+          <a class="site-list__link link-active">
+            Магазин
+          </a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="contacts.html">Контакты</a>
+          <a class="site-list__link" href="contacts.html">
+            Контакты
+          </a>
         </li>
       </ul>
       <ul class="navigation__list user-list">
         <li class="user-list__item">
-          <a class="user-list__link user-list__link--basket" href="basket.html">Корзина</a>
+          <a class="user-list__link user-list__link--basket" href="basket.html">
+            Корзина
+          </a>
         </li>
       </ul>
     </nav>
   </div>
 </header>
 <main class="page-main">
-  <h1 class="page-main__title">Магазин готовых шаблонов</h1>
+  <h1 class="page-main__title">
+    Магазин готовых шаблонов
+  </h1>
   <div class="container container--catalog">
-    <form class="form form--bar" action="https://echo.htmlacademy.ru" method="post"
-          aria-label="Поиск готового шаблона по заданным критериям">
+    <form class="form form--bar" action="https://echo.htmlacademy.ru" method="post" aria-label="Поиск готового шаблона по заданным критериям">
       <fieldset class="form__fieldset form__fieldset--price">
-        <legend class="form__legend">Стоимость:</legend>
+        <legend class="form__legend">
+          Стоимость:
+        </legend>
         <div class="form__range range">
           <div class="range__scale">
             <div class="range__select"></div>
@@ -51,114 +65,149 @@
           <div class="range__toggle toggle-max" tabindex="0"></div>
         </div>
         <div class="form__price-control price-control" aria-label="Перемещайте контрольные точки на шкале, что бы задать ценовой диапазон">
-          <label class="price-control__label" for="prise-min">от</label>
-          <input class="price-control__input" type="text" name="price-min" id="prise-min" value="0"
-                 aria-label="Введите стоимость от 0 до 15000">
-          <label class="price-control__label" for="prise-max">до</label>
-          <input class="price-control__input" type="text" name="price-max" id="prise-max" value="15 000"
-                 aria-label="Введите стоимость до 15000">
+          <label class="price-control__label" for="prise-min">
+            от
+          </label>
+          <input class="price-control__input" type="text" name="price-min" id="prise-min" value="0" aria-label="Введите стоимость от 0 до 15000">
+          <label class="price-control__label" for="prise-max">
+            до
+          </label>
+          <input class="price-control__input" type="text" name="price-max" id="prise-max" value="15 000" aria-label="Введите стоимость до 15000">
         </div>
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--markup">
-        <legend class="form__legend">Сетка:</legend>
+        <legend class="form__legend">
+          Сетка:
+        </legend>
         <ul class="form__list">
           <li class="form__item" tabindex="0">
-        <input class="form__input-markup visually-hidden" type="radio" name="markup" id="markup-adaptive"
-               value="markup-adaptive" checked>
-        <label class="form__label" for="markup-adaptive">Адаптивная</label>
+            <input class="form__input-markup visually-hidden" type="radio" name="markup" id="markup-adaptive" value="markup-adaptive" checked>
+            <label class="form__label" for="markup-adaptive">
+              Адаптивная
+            </label>
           </li>
           <li class="form__item" tabindex="0">
-        <input class="form__input-markup visually-hidden" type="radio" name="markup" id="markup-fixed"
-               value="markup-fixed">
-        <label class="form__label" for="markup-fixed">Фиксированная</label>
+            <input class="form__input-markup visually-hidden" type="radio" name="markup" id="markup-fixed" value="markup-fixed">
+            <label class="form__label" for="markup-fixed">
+              Фиксированная
+            </label>
           </li>
           <li class="form__item" tabindex="0">
-        <input class="form__input-markup visually-hidden" type="radio" name="markup" id="markup-elastic"
-               value="markup-elastic" disabled checked>
-        <label class="form__label" for="markup-elastic">Резиновая</label>
+            <input class="form__input-markup visually-hidden" type="radio" name="markup" id="markup-elastic" value="markup-elastic" disabled checked>
+            <label class="form__label" for="markup-elastic">
+              Резиновая
+            </label>
           </li>
         </ul>
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--features">
-        <legend class="form__legend">Особенности:</legend>
+        <legend class="form__legend">
+          Особенности:
+        </legend>
         <ul class="form__list">
           <li class="form__item" tabindex="0">
-        <input class="form__input-features visually-hidden" type="checkbox" name="slider" id="slider" checked>
-        <label class="form__label" for="slider">Слайдер</label>
+            <input class="form__input-features visually-hidden" type="checkbox" name="slider" id="slider" checked>
+            <label class="form__label" for="slider">
+              Слайдер
+            </label>
           </li>
           <li class="form__item" tabindex="0">
-        <input class="form__input-features visually-hidden" type="checkbox" name="advantages" id="advantages">
-        <label class="form__label" for="advantages">Блок преимуществ</label>
+            <input class="form__input-features visually-hidden" type="checkbox" name="advantages" id="advantages">
+            <label class="form__label" for="advantages">
+              Блок преимуществ
+            </label>
           </li>
           <li class="form__item" tabindex="0">
-        <input class="form__input-features visually-hidden" type="checkbox" name="news" id="news" checked>
-        <label class="form__label" for="news">Новости</label>
+            <input class="form__input-features visually-hidden" type="checkbox" name="news" id="news" checked>
+            <label class="form__label" for="news">
+              Новости
+            </label>
           </li>
           <li class="form__item" tabindex="0">
-        <input class="form__input-features visually-hidden" type="checkbox" name="gallery" id="gallery">
-        <label class="form__label" for="gallery">Галерея</label>
+            <input class="form__input-features visually-hidden" type="checkbox" name="gallery" id="gallery">
+            <label class="form__label" for="gallery">
+              Галерея
+            </label>
           </li>
           <li class="form__item" tabindex="0">
-        <input class="form__input-features visually-hidden" type="checkbox" name="basket" id="basket" disabled checked>
-        <label class="form__label" for="basket">Корзина</label>
+            <input class="form__input-features visually-hidden" type="checkbox" name="basket" id="basket" disabled checked>
+            <label class="form__label" for="basket">
+              Корзина
+            </label>
           </li>
         </ul>
       </fieldset>
-      <button class="form__button button" type="submit">Показать</button>
+      <button class="form__button button" type="submit">
+        Показать
+      </button>
     </form>
     <section class="catalog">
-      <h2 class="visually-hidden">Каталог</h2>
+      <h2 class="visually-hidden">
+        Каталог
+      </h2>
       <section class="markers">
-        <h2 class="markers__caption">Сортировать:</h2>
+        <h2 class="markers__caption">
+          Сортировать:
+        </h2>
         <ul class="markers__list markers__sorting">
           <li class="markers__item">
-            <a class="markers__button link-active" href="price-range-page.html">По цене</a>
-          </li>
-          <li class="markers__item">
-            <a class="markers__button" href="type-range-page.html">По типу</a>
-          </li>
-          <li class="markers__item">
-            <a class="markers__button" href="name-range-page.html">По названию</a>
-          </li>
-          </ul>
-          <ul class="markers__list markers__result" aria-label="Навигация по открытой странице каталога">
-            <li class="markers__item">
-              <a class="markers__result__button-up link-active" href="result-up.html">
-              <span class="visually-hidden">Вверх страницы</span>
+            <a class="markers__button link-active" href="price-range-page.html">
+              По цене
             </a>
-            </li>
+          </li>
+          <li class="markers__item">
+            <a class="markers__button" href="type-range-page.html">
+              По типу
+            </a>
+          </li>
+          <li class="markers__item">
+            <a class="markers__button" href="name-range-page.html">
+              По названию
+            </a>
+          </li>
+        </ul>
+        <ul class="markers__list markers__result" aria-label="Навигация по открытой странице каталога">
+          <li class="markers__item">
+            <a class="markers__result__button-up link-active" href="result-up.html">
+              <span class="visually-hidden">
+                Вверх страницы
+              </span>
+            </a>
+          </li>
           <li class="markers__item">
             <a class="markers__result__button-down" href="result-down.html">
-              <span class="visually-hidden">Вниз страницы</span>
+              <span class="visually-hidden">
+                Вниз страницы
+              </span>
             </a>
           </li>
-          </ul>
+        </ul>
       </section>
       <ul class="catalog__list" aria-label="Готовые шаблоны, предлагаемые дизайн-студией Nёrds для ваших проектов">
         <li class="catalog__item" aria-label="Карточка готового шаблона" tabindex="0">
-          <img class="catalog__image" src="img/catalog_sedona.jpg" width="360" height="576"
-               alt="готовый шаблон: Sedona">
+          <img class="catalog__image" src="img/catalog_sedona.jpg" width="360" height="576" alt="готовый шаблон: Sedona">
           <div class="catalog__preview" aria-label="Подробнее о предложении" tabindex="0">
-            <a class="catalog__title" href="modalSedona.html">Sedona</a>
+            <a class="catalog__title" href="modalSedona.html">
+              Sedona
+            </a>
             <p class="catalog__description catalog__description--sedona">
               Информационный сайт для туристов
             </p>
-            <button class="catalog__button-buy button" type="button"
-                    aria-label="Нажмите на кнопку, что бы добавить шаблон в вашу корзину">
+            <button class="catalog__button-buy button" type="button" aria-label="Нажмите на кнопку, что бы добавить шаблон в вашу корзину">
               9900 руб
             </button>
           </div>
         </li>
         <li class="catalog__item" aria-label="Карточка готового шаблона" tabindex="0">
-          <img class="catalog__image" src="img/catalog_pink.jpg" width="360" height="576"
-               alt="готовый шаблон: Pink App">
+          <img class="catalog__image" src="img/catalog_pink.jpg" width="360" height="576" alt="готовый шаблон: Pink App">
           <div class="catalog__preview" aria-label="Подробнее о предложении" tabindex="0">
-            <a class="catalog__title" href="modalPink.html">Pink App</a>
+            <a class="catalog__title" href="modalPink.html">
+              Pink App
+            </a>
             <p class="catalog__description">
               Продуктовый лендинг приложения для iOS и Android
             </p>
-            <button class="catalog__button-buy button" type="button"
-                    aria-label="Нажмите на кнопку, что бы добавить шаблон в вашу корзину">
+            <button class="catalog__button-buy button" type="button" aria-label="Нажмите на кнопку, что бы добавить шаблон в вашу корзину">
               9900 руб
             </button>
           </div>
@@ -167,25 +216,27 @@
           <img class="catalog__image" src="img/catalog_barbershop.jpg" width="360" height="576"
                alt="готовый шаблон: Barbershop">
           <div class="catalog__preview" aria-label="Подробнее о предложении" tabindex="0">
-            <a class="catalog__title" href="modalBarbershop.html">Barbershop</a>
-            <p class="catalog__description catalog__description--barbershop">Сайт салоны красоты. Для мужчин, да.</p>
-            <button class="catalog__button-buy button" type="button"
-                    aria-label="Нажмите на кнопку, что бы добавить шаблон в вашу корзину">
+            <a class="catalog__title" href="modalBarbershop.html">
+              Barbershop
+            </a>
+            <p class="catalog__description catalog__description--barbershop">
+              Сайт салоны красоты. Для мужчин, да.
+            </p>
+            <button class="catalog__button-buy button" type="button" aria-label="Нажмите на кнопку, что бы добавить шаблон в вашу корзину">
               9900 руб
             </button>
           </div>
         </li>
         <li class="catalog__item" aria-label="Карточка готового шаблона" tabindex="0">
-          <img class="catalog__image" src="img/catalog_mishka.jpg" width="360" height="576"
-               alt="готовый шаблон: Mishka">
+          <img class="catalog__image" src="img/catalog_mishka.jpg" width="360" height="576" alt="готовый шаблон: Mishka">
           <div class="catalog__preview" aria-label="Подробнее о предложении" tabindex="0">
-            <a class="catalog__title" href="modalMishka.html">Mishka</a>
+            <a class="catalog__title" href="modalMishka.html">
+              Mishka
+            </a>
             <p class="catalog__description catalog__description--mishka">
-              Интернет-магазин
-              вязаных игрушек
+              Интернет-магазин вязаных игрушек
             </p>
-            <button class="catalog__button-buy button" type="button"
-                    aria-label="Нажмите на кнопку, что бы добавить шаблон в вашу корзину">
+            <button class="catalog__button-buy button" type="button" aria-label="Нажмите на кнопку, что бы добавить шаблон в вашу корзину">
               9900 руб
             </button>
           </div>
@@ -193,12 +244,13 @@
         <li class="catalog__item" aria-label="Карточка готового шаблона" tabindex="0">
           <img class="catalog__image" src="img/catalog_aplus.jpg" width="360" height="576" alt="готовый шаблон: A Plus">
           <div class="catalog__preview" aria-label="Подробнее о предложении" tabindex="0">
-            <a class="catalog__title" href="modalAPlus.html">A Plus</a>
+            <a class="catalog__title" href="modalAPlus.html">
+              A Plus
+            </a>
             <p class="catalog__description">
               Лендинг курсов повышения квалификации
             </p>
-            <button class="catalog__button-buy button" type="button"
-                    aria-label="Нажмите на кнопку, что бы добавить шаблон в вашу корзину">
+            <button class="catalog__button-buy button" type="button" aria-label="Нажмите на кнопку, что бы добавить шаблон в вашу корзину">
               9900 руб
             </button>
           </div>
@@ -206,32 +258,47 @@
         <li class="catalog__item" aria-label="Карточка готового шаблона" tabindex="0">
           <img class="catalog__image" src="img/catalog_kvast.jpg" width="360" height="576" alt="готовый шаблон: Кваст">
           <div class="catalog__preview" aria-label="Подробнее о предложении" tabindex="0">
-            <a class="catalog__title" href="modalKvast.html">Кваст</a>
+            <a class="catalog__title" href="modalKvast.html">
+              Кваст
+            </a>
             <p class="catalog__description">
               Промо-сайт производителя крафтового кваса
             </p>
-            <button class="catalog__button-buy button" type="button"
-                    aria-label="Нажмите на кнопку, что бы добавить шаблон в вашу корзину">
+            <button class="catalog__button-buy button" type="button" aria-label="Нажмите на кнопку, что бы добавить шаблон в вашу корзину">
               9900 руб
             </button>
           </div>
         </li>
       </ul>
       <div class="pagination" aria-label="Навигация по страницам каталога">
-        <a class="pagination__page button link-active">1</a>
-        <a class="pagination__page button" href="catalogPage2.html">2</a>
-        <a class="pagination__page button" href="catalogPage3.html">3</a>
-        <button class="pagination__next button" type="button">Следующая</button>
+        <a class="pagination__page button link-active">
+          1
+        </a>
+        <a class="pagination__page button" href="catalogPage2.html">
+          2
+        </a>
+        <a class="pagination__page button" href="catalogPage3.html">
+          3
+        </a>
+        <button class="pagination__next button" type="button">
+          Следующая
+        </button>
       </div>
     </section>
   </div>
   <section class="map">
-    <h2 class="visually-hidden">Карта</h2>
+    <h2 class="visually-hidden">
+      Карта
+    </h2>
     <div class="map__image"></div>
     <div class="container">
       <section class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <b class="contacts__name">Nёrds design studio</b>
+        <h2 class="visually-hidden">
+          Контакты
+        </h2>
+        <b class="contacts__name">
+          Nёrds design studio
+        </b>
         <p class="contacts__address" aria-label="Наш адрес">
           191186, Санкт-Петербург, <br>
           ул. Б. Конюшенная, д. 19/8
@@ -239,7 +306,9 @@
         <p class="contacts__tel">
           тел. +7 (812) 275-75-75
         </p>
-        <a class="contacts__button button" href="feedback-form.html">Напишите нам</a>
+        <a class="contacts__button button" href="feedback-form.html">
+          Напишите нам
+        </a>
       </section>
     </div>
   </section>
@@ -247,55 +316,71 @@
 <footer class="page-footer">
   <div class="container">
     <section class="page-footer__social social">
-      <h2 class="visually-hidden">Мы в социальных сетях:</h2>
+      <h2 class="visually-hidden">
+        Мы в социальных сетях:
+      </h2>
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--vk" href="https://vk.com">
-            <span class="visually-hidden">Вконтакте</span>
+            <span class="visually-hidden">
+              Вконтакте
+            </span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--fb" href="https://www.facebook.com">
-            <span class="visually-hidden">Facebook</span>
+            <span class="visually-hidden">
+              Facebook
+            </span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--inst" href="https://www.instagram.com">
-            <span class="visually-hidden">Instagram</span>
+            <span class="visually-hidden">
+              Instagram
+            </span>
           </a>
         </li>
       </ul>
       <div class="social__wrapper">
-        <b class="social__slogan">Давайте дружить, это выгодно!</b>
-        <p class="social__description">Скидка 10% для друзей из социальных сетей.</p>
+        <b class="social__slogan">
+          Давайте дружить, это выгодно!
+        </b>
+        <p class="social__description">
+          Скидка 10% для друзей из социальных сетей.
+        </p>
       </div>
     </section>
   </div>
 </footer>
 <section class="popup">
-  <h2 class="popup__caption">Напишите нам</h2>
+  <h2 class="popup__caption">
+    Напишите нам
+  </h2>
   <form class="popup__form" action="https://echo.htmlacademy.ru" method="post">
-    <label class="popup__label" for="my-name">Ваше имя:
+    <label class="popup__label" for="my-name">
+      Ваше имя:
       <input class="popup__input" type="text" name="my-name" id="my-name" placeholder="Имя Фамилия">
     </label>
-    <label class="popup__label" for="email">Ваш e-mail:
+    <label class="popup__label" for="email">
+      Ваш e-mail:
       <input class="popup__input" type="email" name="email" id="email" placeholder="email@example.com">
     </label>
-    <label class="popup__label popup__textarea" for="comment">Текст письма:
-      <textarea class="popup__input " name="comment" rows="5" id="comment"
-                placeholder="В свободной форме"></textarea>
+    <label class="popup__label popup__textarea" for="comment">
+      Текст письма:
+      <textarea class="popup__input " name="comment" rows="5" id="comment" placeholder="В свободной форме"></textarea>
     </label>
     <button class="popup__button button" type="submit">
       Отправить
     </button>
     <button class="popup__button-close" type="button">
-      <span class="visually-hidden">Закрыть форму</span>
+      <span class="visually-hidden">
+        Закрыть форму
+      </span>
     </button>
   </form>
 </section>
-<script src = js/script.js></script>
-<script
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEPgUTh-jVy6qLG93pUjyffkqFJcHVmlI&callback=initMap">
-</script>
+<script src=js/script.js></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEPgUTh-jVy6qLG93pUjyffkqFJcHVmlI&callback=initMap"></script>
 </body>
 </html>
