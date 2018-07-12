@@ -47,11 +47,10 @@
           <div class="range__scale">
             <div class="range__select"></div>
           </div>
-          <div class="range__toggle toggle-min" tabindex="1"></div>
-          <div class="range__toggle toggle-max" tabindex="1"></div>
+          <div class="range__toggle toggle-min" tabindex="0"></div>
+          <div class="range__toggle toggle-max" tabindex="0"></div>
         </div>
-        <div class="form__price-control price-control"
-             aria-label="Перемещайте контрольные точки на шкале, что бы задать ценовой диапазон">
+        <div class="form__price-control price-control" aria-label="Перемещайте контрольные точки на шкале, что бы задать ценовой диапазон">
           <label class="price-control__label" for="prise-min">от</label>
           <input class="price-control__input" type="text" name="price-min" id="prise-min" value="0"
                  aria-label="Введите стоимость от 0 до 15000">
@@ -63,17 +62,17 @@
       <fieldset class="form__fieldset form__fieldset--markup">
         <legend class="form__legend">Сетка:</legend>
         <ul class="form__list">
-          <li class="form__item">
+          <li class="form__item" tabindex="0">
         <input class="form__input-markup visually-hidden" type="radio" name="markup" id="markup-adaptive"
                value="markup-adaptive" checked>
         <label class="form__label" for="markup-adaptive">Адаптивная</label>
           </li>
-          <li class="form__item">
+          <li class="form__item" tabindex="0">
         <input class="form__input-markup visually-hidden" type="radio" name="markup" id="markup-fixed"
                value="markup-fixed">
         <label class="form__label" for="markup-fixed">Фиксированная</label>
           </li>
-          <li class="form__item">
+          <li class="form__item" tabindex="0">
         <input class="form__input-markup visually-hidden" type="radio" name="markup" id="markup-elastic"
                value="markup-elastic" disabled checked>
         <label class="form__label" for="markup-elastic">Резиновая</label>
@@ -83,23 +82,23 @@
       <fieldset class="form__fieldset form__fieldset--features">
         <legend class="form__legend">Особенности:</legend>
         <ul class="form__list">
-          <li class="form__item">
+          <li class="form__item" tabindex="0">
         <input class="form__input-features visually-hidden" type="checkbox" name="slider" id="slider" checked>
         <label class="form__label" for="slider">Слайдер</label>
           </li>
-          <li class="form__item">
+          <li class="form__item" tabindex="0">
         <input class="form__input-features visually-hidden" type="checkbox" name="advantages" id="advantages">
         <label class="form__label" for="advantages">Блок преимуществ</label>
           </li>
-          <li class="form__item">
+          <li class="form__item" tabindex="0">
         <input class="form__input-features visually-hidden" type="checkbox" name="news" id="news" checked>
         <label class="form__label" for="news">Новости</label>
           </li>
-          <li class="form__item" >
+          <li class="form__item" tabindex="0">
         <input class="form__input-features visually-hidden" type="checkbox" name="gallery" id="gallery">
         <label class="form__label" for="gallery">Галерея</label>
           </li>
-          <li class="form__item">
+          <li class="form__item" tabindex="0">
         <input class="form__input-features visually-hidden" type="checkbox" name="basket" id="basket" disabled checked>
         <label class="form__label" for="basket">Корзина</label>
           </li>
@@ -111,27 +110,35 @@
       <h2 class="visually-hidden">Каталог</h2>
       <section class="markers">
         <h2 class="markers__caption">Сортировать:</h2>
-        <form class="markers__form">
-          <div class="markers__wrapper-button">
-            <button class="markers__button active" type="button">По цене</button>
-            <button class="markers__button" type="button">По типу</button>
-            <button class="markers__button" type="button">По названию</button>
-          </div>
-          <div class="markers__result" aria-label="Навигация по открытой странице каталога">
-            <button class="markers__result__button-up active" type="button">
+        <ul class="markers__list markers__sorting">
+          <li class="markers__item">
+            <a class="markers__button link-active" href="price-range-page.html">По цене</a>
+          </li>
+          <li class="markers__item">
+            <a class="markers__button" href="type-range-page.html">По типу</a>
+          </li>
+          <li class="markers__item">
+            <a class="markers__button" href="name-range-page.html">По названию</a>
+          </li>
+          </ul>
+          <ul class="markers__list markers__result" aria-label="Навигация по открытой странице каталога">
+            <li class="markers__item">
+              <a class="markers__result__button-up link-active" href="result-up.html">
               <span class="visually-hidden">Вверх страницы</span>
-            </button>
-            <button class="markers__result__button-down" type="button">
+            </a>
+            </li>
+          <li class="markers__item">
+            <a class="markers__result__button-down" href="result-down.html">
               <span class="visually-hidden">Вниз страницы</span>
-            </button>
-          </div>
-        </form>
+            </a>
+          </li>
+          </ul>
       </section>
       <ul class="catalog__list" aria-label="Готовые шаблоны, предлагаемые дизайн-студией Nёrds для ваших проектов">
-        <li class="catalog__item" aria-label="Карточка готового шаблона">
+        <li class="catalog__item" aria-label="Карточка готового шаблона" tabindex="0">
           <img class="catalog__image" src="img/catalog_sedona.jpg" width="360" height="576"
                alt="готовый шаблон: Sedona">
-          <div class="catalog__preview" aria-label="Подробнее о предложении">
+          <div class="catalog__preview" aria-label="Подробнее о предложении" tabindex="0">
             <a class="catalog__title" href="modalSedona.html">Sedona</a>
             <p class="catalog__description catalog__description--sedona">
               Информационный сайт для туристов
@@ -142,10 +149,10 @@
             </button>
           </div>
         </li>
-        <li class="catalog__item" aria-label="Карточка готового шаблона">
+        <li class="catalog__item" aria-label="Карточка готового шаблона" tabindex="0">
           <img class="catalog__image" src="img/catalog_pink.jpg" width="360" height="576"
                alt="готовый шаблон: Pink App">
-          <div class="catalog__preview" aria-label="Подробнее о предложении">
+          <div class="catalog__preview" aria-label="Подробнее о предложении" tabindex="0">
             <a class="catalog__title" href="modalPink.html">Pink App</a>
             <p class="catalog__description">
               Продуктовый лендинг приложения для iOS и Android
@@ -156,10 +163,10 @@
             </button>
           </div>
         </li>
-        <li class="catalog__item" aria-label="Карточка готового шаблона">
+        <li class="catalog__item" aria-label="Карточка готового шаблона" tabindex="0">
           <img class="catalog__image" src="img/catalog_barbershop.jpg" width="360" height="576"
                alt="готовый шаблон: Barbershop">
-          <div class="catalog__preview" aria-label="Подробнее о предложении">
+          <div class="catalog__preview" aria-label="Подробнее о предложении" tabindex="0">
             <a class="catalog__title" href="modalBarbershop.html">Barbershop</a>
             <p class="catalog__description catalog__description--barbershop">Сайт салоны красоты. Для мужчин, да.</p>
             <button class="catalog__button-buy button" type="button"
@@ -168,10 +175,10 @@
             </button>
           </div>
         </li>
-        <li class="catalog__item" aria-label="Карточка готового шаблона">
+        <li class="catalog__item" aria-label="Карточка готового шаблона" tabindex="0">
           <img class="catalog__image" src="img/catalog_mishka.jpg" width="360" height="576"
                alt="готовый шаблон: Mishka">
-          <div class="catalog__preview" aria-label="Подробнее о предложении">
+          <div class="catalog__preview" aria-label="Подробнее о предложении" tabindex="0">
             <a class="catalog__title" href="modalMishka.html">Mishka</a>
             <p class="catalog__description catalog__description--mishka">
               Интернет-магазин
@@ -183,9 +190,9 @@
             </button>
           </div>
         </li>
-        <li class="catalog__item" aria-label="Карточка готового шаблона">
+        <li class="catalog__item" aria-label="Карточка готового шаблона" tabindex="0">
           <img class="catalog__image" src="img/catalog_aplus.jpg" width="360" height="576" alt="готовый шаблон: A Plus">
-          <div class="catalog__preview" aria-label="Подробнее о предложении">
+          <div class="catalog__preview" aria-label="Подробнее о предложении" tabindex="0">
             <a class="catalog__title" href="modalAPlus.html">A Plus</a>
             <p class="catalog__description">
               Лендинг курсов повышения квалификации
@@ -196,9 +203,9 @@
             </button>
           </div>
         </li>
-        <li class="catalog__item" aria-label="Карточка готового шаблона">
+        <li class="catalog__item" aria-label="Карточка готового шаблона" tabindex="0">
           <img class="catalog__image" src="img/catalog_kvast.jpg" width="360" height="576" alt="готовый шаблон: Кваст">
-          <div class="catalog__preview" aria-label="Подробнее о предложении">
+          <div class="catalog__preview" aria-label="Подробнее о предложении" tabindex="0">
             <a class="catalog__title" href="modalKvast.html">Кваст</a>
             <p class="catalog__description">
               Промо-сайт производителя крафтового кваса
