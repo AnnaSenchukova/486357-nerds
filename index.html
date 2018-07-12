@@ -58,7 +58,7 @@
       <input class="visually-hidden slider__check slide-1" type="radio" id="principe-1" name="toggle" checked>
       <input class="visually-hidden slider__check slide-2" type="radio" id="principe-2" name="toggle">
       <input class="visually-hidden slider__check slide-3" type="radio" id="principe-3" name="toggle">
-      <div class="slider__controls " aria-label="Навигация по слайдам с приоритетами">
+      <div class="slider__controls" aria-label="Навигация по слайдам с приоритетами">
         <label class="slider__controls-button slider-page-1" for="principe-1" tabindex="0">
           Первый слайд
         </label>
@@ -265,7 +265,7 @@
       Карта
     </h2>
     <div class="map__image"></div>
-    <div class="container">
+    <div class="container container--map">
       <section class="contacts">
         <h2 class="visually-hidden">
           Контакты
@@ -287,7 +287,7 @@
   </section>
 </main>
 <footer class="page-footer">
-  <div class="container">
+  <div class="container container--footer">
     <section class="page-footer__social social">
       <h2 class="visually-hidden">
         Мы в социальных сетях:
@@ -333,15 +333,15 @@
   <form class="popup__form" action="https://echo.htmlacademy.ru" method="post">
     <label class="popup__label" for="my-name">
       Ваше имя:
-      <input class="popup__input" type="text" name="my-name" id="my-name" placeholder="Имя Фамилия">
+      <input class="popup__input" type="text" id="my-name" name="my-name" placeholder="Имя Фамилия" required>
     </label>
     <label class="popup__label" for="email">
       Ваш e-mail:
-      <input class="popup__input" type="email" name="email" id="email" placeholder="email@example.com">
+      <input class="popup__input" type="email" id="email" name="email" placeholder="email@example.com" required>
     </label>
-    <label class="popup__label popup__textarea" for="comment">
+    <label class="popup__label popup__label--textarea" for="comment">
       Текст письма:
-      <textarea class="popup__input " name="comment" rows="5" id="comment" placeholder="В свободной форме"></textarea>
+      <textarea class="popup__input popup__input--textarea" id="comment"  name="comment" rows="5" placeholder="В свободной форме"></textarea>
     </label>
     <button class="popup__button button" type="submit">
       Отправить

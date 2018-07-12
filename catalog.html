@@ -68,11 +68,11 @@
           <label class="price-control__label" for="prise-min">
             от
           </label>
-          <input class="price-control__input" type="text" name="price-min" id="prise-min" value="0" aria-label="Введите стоимость от 0 до 15000">
+          <input class="price-control__input" type="text" id="prise-min" name="price-min" value="0" aria-label="Введите стоимость от 0 до 15000">
           <label class="price-control__label" for="prise-max">
             до
           </label>
-          <input class="price-control__input" type="text" name="price-max" id="prise-max" value="15 000" aria-label="Введите стоимость до 15000">
+          <input class="price-control__input" type="text" id="prise-max" name="price-max" value="15 000" aria-label="Введите стоимость до 15000">
         </div>
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--markup">
@@ -81,19 +81,19 @@
         </legend>
         <ul class="form__list">
           <li class="form__item" tabindex="0">
-            <input class="form__input-markup visually-hidden" type="radio" name="markup" id="markup-adaptive" value="markup-adaptive" checked>
+            <input class="form__input-markup visually-hidden" type="radio"  id="markup-adaptive" name="markup" value="markup-adaptive" checked>
             <label class="form__label" for="markup-adaptive">
               Адаптивная
             </label>
           </li>
           <li class="form__item" tabindex="0">
-            <input class="form__input-markup visually-hidden" type="radio" name="markup" id="markup-fixed" value="markup-fixed">
+            <input class="form__input-markup visually-hidden" type="radio" id="markup-fixed" name="markup" value="markup-fixed">
             <label class="form__label" for="markup-fixed">
               Фиксированная
             </label>
           </li>
           <li class="form__item" tabindex="0">
-            <input class="form__input-markup visually-hidden" type="radio" name="markup" id="markup-elastic" value="markup-elastic" disabled checked>
+            <input class="form__input-markup visually-hidden" type="radio"  id="markup-elastic" name="markup" value="markup-elastic" disabled checked>
             <label class="form__label" for="markup-elastic">
               Резиновая
             </label>
@@ -106,31 +106,31 @@
         </legend>
         <ul class="form__list">
           <li class="form__item" tabindex="0">
-            <input class="form__input-features visually-hidden" type="checkbox" name="slider" id="slider" checked>
+            <input class="form__input-features visually-hidden" type="checkbox" id="slider" name="slider" checked>
             <label class="form__label" for="slider">
               Слайдер
             </label>
           </li>
           <li class="form__item" tabindex="0">
-            <input class="form__input-features visually-hidden" type="checkbox" name="advantages" id="advantages">
+            <input class="form__input-features visually-hidden" type="checkbox" id="advantages" name="advantages">
             <label class="form__label" for="advantages">
               Блок преимуществ
             </label>
           </li>
           <li class="form__item" tabindex="0">
-            <input class="form__input-features visually-hidden" type="checkbox" name="news" id="news" checked>
+            <input class="form__input-features visually-hidden" type="checkbox" id="news" name="news" checked>
             <label class="form__label" for="news">
               Новости
             </label>
           </li>
           <li class="form__item" tabindex="0">
-            <input class="form__input-features visually-hidden" type="checkbox" name="gallery" id="gallery">
+            <input class="form__input-features visually-hidden" type="checkbox" id="gallery" name="gallery">
             <label class="form__label" for="gallery">
               Галерея
             </label>
           </li>
           <li class="form__item" tabindex="0">
-            <input class="form__input-features visually-hidden" type="checkbox" name="basket" id="basket" disabled checked>
+            <input class="form__input-features visually-hidden" type="checkbox" id="basket" name="basket" disabled checked>
             <label class="form__label" for="basket">
               Корзина
             </label>
@@ -149,7 +149,7 @@
         <h2 class="markers__caption">
           Сортировать:
         </h2>
-        <ul class="markers__list markers__sorting">
+        <ul class="markers__list markers__list--sorting">
           <li class="markers__item">
             <a class="markers__button link-active" href="price-range-page.html">
               По цене
@@ -166,7 +166,7 @@
             </a>
           </li>
         </ul>
-        <ul class="markers__list markers__result" aria-label="Навигация по открытой странице каталога">
+        <ul class="markers__list markers__list--result" aria-label="Навигация по открытой странице каталога">
           <li class="markers__item">
             <a class="markers__result__button-up link-active" href="result-up.html">
               <span class="visually-hidden">
@@ -213,8 +213,7 @@
           </div>
         </li>
         <li class="catalog__item" aria-label="Карточка готового шаблона" tabindex="0">
-          <img class="catalog__image" src="img/catalog_barbershop.jpg" width="360" height="576"
-               alt="готовый шаблон: Barbershop">
+          <img class="catalog__image" src="img/catalog_barbershop.jpg" width="360" height="576" alt="готовый шаблон: Barbershop">
           <div class="catalog__preview" aria-label="Подробнее о предложении" tabindex="0">
             <a class="catalog__title" href="modalBarbershop.html">
               Barbershop
@@ -291,7 +290,7 @@
       Карта
     </h2>
     <div class="map__image"></div>
-    <div class="container">
+    <div class="container container--map">
       <section class="contacts">
         <h2 class="visually-hidden">
           Контакты
@@ -314,7 +313,7 @@
   </section>
 </main>
 <footer class="page-footer">
-  <div class="container">
+  <div class="container container--footer">
     <section class="page-footer__social social">
       <h2 class="visually-hidden">
         Мы в социальных сетях:
@@ -360,15 +359,15 @@
   <form class="popup__form" action="https://echo.htmlacademy.ru" method="post">
     <label class="popup__label" for="my-name">
       Ваше имя:
-      <input class="popup__input" type="text" name="my-name" id="my-name" placeholder="Имя Фамилия">
+      <input class="popup__input" type="text" id="my-name" name="my-name" placeholder="Имя Фамилия" required>
     </label>
     <label class="popup__label" for="email">
       Ваш e-mail:
-      <input class="popup__input" type="email" name="email" id="email" placeholder="email@example.com">
+      <input class="popup__input" type="email" id="email" name="email" placeholder="email@example.com" required>
     </label>
-    <label class="popup__label popup__textarea" for="comment">
+    <label class="popup__label popup__label--textarea" for="comment">
       Текст письма:
-      <textarea class="popup__input " name="comment" rows="5" id="comment" placeholder="В свободной форме"></textarea>
+      <textarea class="popup__input popup__input--textarea" id="comment" name="comment" rows="5" placeholder="В свободной форме"></textarea>
     </label>
     <button class="popup__button button" type="submit">
       Отправить
