@@ -7,7 +7,7 @@ function initMap() {
 
   var map = new google.maps.Map(document.querySelector('.map__image'), myMap);
 
-  var image = 'img/map_pointer.png';
+  var image = 'img/map-pointer.png';
 
   var marker = new google.maps.Marker({
     map: map,

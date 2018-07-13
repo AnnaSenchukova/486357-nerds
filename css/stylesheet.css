@@ -1,23 +1,23 @@
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
-       url("../fonts/Roboto-Regular.woff") format("woff");
+  src: url("../fonts/roboto-regular.woff2") format("woff2"),
+       url("../fonts/roboto-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
-       url("../fonts/Roboto-Medium.woff") format("woff");
+  src: url("../fonts/roboto-medium.woff2") format("woff2"),
+       url("../fonts/roboto-medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
-       url("../fonts/Roboto-Bold.woff") format("woff");
+  src: url("../fonts/roboto-bold.woff2") format("woff2"),
+       url("../fonts/roboto-bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -262,7 +262,7 @@ img {
   margin-top: -4px;
   margin-right: 26px;
 
-  background-image: url("../img/navigation_basket.svg");
+  background-image: url("../img/navigation-basket.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -328,19 +328,19 @@ img {
 }
 
 .slider__item--principe-cash {
-  background-image: url("../img/slider_slide1.png");
+  background-image: url("../img/slider-slide1.png");
   background-repeat: no-repeat;
   background-position: 99% 100%;
 }
 
 .slider__item--principe-math {
-  background-image: url("../img/slider_slide2.png");
+  background-image: url("../img/slider-slide2.png");
   background-repeat: no-repeat;
   background-position: 100% 100%;
 }
 
 .slider__item--principe-night {
-  background-image: url("../img/slider_slide3.png");
+  background-image: url("../img/slider-slide3.png");
   background-repeat: no-repeat;
   background-position: 100% 100%;
 }
@@ -484,7 +484,7 @@ img {
   height: 146px;
 
   background-color: #fb565a;
-  background-image: url("../img/services_web.png");
+  background-image: url("../img/services-web.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -497,7 +497,7 @@ img {
   height: 146px;
 
   background-color: #00ca74;
-  background-image: url("../img/services_app.png");
+  background-image: url("../img/services-app.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -510,7 +510,7 @@ img {
   height: 146px;
 
   background-color: #efc84a;
-  background-image: url("../img/services_presentation.png");
+  background-image: url("../img/services-presentation.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1074,7 +1074,7 @@ img {
   width: 27px;
   height: 23px;
 
-  background-image: url("../img/form_checkbox-on.svg");
+  background-image: url("../img/form-checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   outline: none;
@@ -1354,7 +1354,7 @@ img {
   width: 360px;
   height: 40px;
 
-  background-image: url("../img/catalog_browser.svg");
+  background-image: url("../img/catalog-browser.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.12;
@@ -1655,7 +1655,7 @@ img {
   width: 26px;
   height: 15px;
 
-  background-image: url("../img/footer_social_vk.svg");
+  background-image: url("../img/social-vk.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1672,7 +1672,7 @@ img {
   width: 12px;
   height: 22px;
 
-  background-image: url("../img/footer_social_fb.svg");
+  background-image: url("../img/social-fb.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1689,7 +1689,7 @@ img {
   width: 21px;
   height: 21px;
 
-  background-image: url("../img/footer_social_inst.svg");
+  background-image: url("../img/social-inst.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
