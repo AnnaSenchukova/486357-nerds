@@ -46,6 +46,7 @@ body {
   color: #283136;
 
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 a {
@@ -110,7 +111,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 70px 0;
+  padding: 69px 0;
 }
 
 
@@ -182,7 +183,7 @@ img {
 
   width: 160px;
 
-  padding-top: 50px;
+  padding-top: 49px;
 }
 
 .navigation__logo-link:hover:not(.link-active),
@@ -230,7 +231,11 @@ img {
 }
 
 .site-list__item:not(:last-child) {
-  padding-right: 46px;
+  padding-right: 45px;
+}
+
+.site-list__item:nth-child(2) {
+  padding-right: 49px;
 }
 
 .site-list__link,
@@ -243,7 +248,6 @@ img {
   align-items: center;
   max-width: 120px;
   padding-top: 15px;
-  padding-bottom: 3px;
 
   font-weight: 500;
   line-height: 30px;
@@ -259,7 +263,7 @@ img {
   display: block;
   width: 15px;
   height: 15px;
-  margin-top: -4px;
+  margin-top: -2px;
   margin-right: 26px;
 
   background-image: url("../img/navigation-basket.svg");
@@ -322,15 +326,14 @@ img {
 
 .slider__item {
   display: none;
-  margin-top: -10px;
-  padding-top: 80px;
-  padding-bottom: 79px;
+  margin-top: -9px;
+  padding: 80px 0;
 }
 
 .slider__item--principe-cash {
   background-image: url("../img/slider-slide1.png");
   background-repeat: no-repeat;
-  background-position: 99% 100%;
+  background-position: 99.2% 100%;
 }
 
 .slider__item--principe-math {
@@ -348,13 +351,14 @@ img {
 .slider__caption {
   max-width: 514px;
   margin: 0;
+  margin-left: -1px;
   padding: 0;
   padding-bottom: 26px;
 
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-  letter-spacing: 0.05px;
+  letter-spacing: 0.1px;
   color: #000000;
 }
 
@@ -366,17 +370,20 @@ img {
   display: block;
   margin: 0;
   padding: 0;
-  padding-bottom: 38px;
+  padding-bottom: 39px;
 
   line-height: 24px;
-  letter-spacing: 0.05px;
+  letter-spacing: 0.03px;
 }
 
 .slider__button {
-  width: 242px;
-  padding-right: 55px;
-  padding-left: 54px;
+  width: 240px;
+  padding-left: 53px;
+  padding-top: 17px;
   padding-bottom: 15px;
+
+  font-weight: 400;
+  letter-spacing: 0.2px;
 }
 
 .slider__check {
@@ -388,7 +395,7 @@ img {
 .slider__controls {
   position: absolute;
   bottom: 20.7%;
-  left: 46.7%;
+  left: 46.3%;
   z-index: 20;
 
   font-size: 0;
@@ -401,7 +408,7 @@ img {
   vertical-align: top;
   width: 18px;
   height: 18px;
-  margin-right: 18px;
+  margin-right: 17px;
 
   background-color: #ffffff;
   border-radius: 50%;
@@ -443,10 +450,10 @@ img {
 
 
 .services {
-  margin-bottom: 75px;
-  padding-bottom: 81px;
+  margin-bottom: 74px;
+  padding-bottom: 80px;
 
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .services__list {
@@ -516,7 +523,9 @@ img {
 }
 
 .services__caption {
-  margin-bottom: 0;
+  margin: 0;
+  margin-top: 25px;
+  margin-left: -1px;
 
   font-weight: 700;
   font-size: 24px;
@@ -528,14 +537,24 @@ img {
 .services__description {
   max-width: 247px;
   margin-bottom: 0;
-  padding-bottom: 33px;
+  padding-bottom: 32px;
+}
+
+.services__item--web .services__description {
+  letter-spacing: -0.15px;
+}
+
+.services__item--app .services__description {
+  letter-spacing: 0.2px;
+  padding-left: 1px;
 }
 
 .services__button {
   width: 160px;
   padding: 0 40px;
   padding-top: 17px;
-  padding-bottom: 14px
+  padding-bottom: 15px;
+  letter-spacing: -0.1px;
 }
 
 .services__item--app .services__button {
@@ -585,7 +604,7 @@ img {
   width: 360px;
   height: 225px;
 
-  background-image: url("../img/about-us_logo.png");
+  background-image: url("../img/about-us-logo.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -635,7 +654,7 @@ img {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.06px;
   color: #000000;
 }
 
@@ -669,12 +688,18 @@ img {
 }
 
 .in-number {
-  max-width: 365px;
+  width: 365px;
 }
 
 .in-number__caption {
-  padding-left: 20px;
+  padding-left: 21px;
   padding-bottom: 44px;
+  letter-spacing: 0.05px;
+}
+
+.table {
+  width: 100%;
+  padding-left: 2px;
 }
 
 .table__stroke-percent {
@@ -691,11 +716,12 @@ img {
 .table__cell {
   display: inline-block;
   vertical-align: top;
-  width: 112px;
+  width: 119px;
   min-height: 35px;
   margin-bottom: 21px;
 
   text-align: start;
+  letter-spacing: 0.05px;
 }
 
 .table__cell-number {
@@ -752,14 +778,13 @@ img {
   justify-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
-  flex-grow: 2;
-  width: inherit;
+  width: 298px;
   height: 100%;
 }
 
 .partners__item:last-child,
 .partners__item:first-child {
-  flex-grow: 1;
+width: 279px;
 }
 
 .partners__item:not(:last-child)::after {
@@ -804,7 +829,7 @@ img {
   -ms-flex-pack: start;
   justify-content: flex-start;
   padding-top: 10px;
-  padding-left: 30px;
+  padding-left: 31px;
 }
 
 .partners__link:hover,
@@ -1556,6 +1581,7 @@ img {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: -0.05px;
   color: #000000;
 }
 
@@ -1563,11 +1589,13 @@ img {
 .contacts__tel {
   max-width: 210px;
   margin: 0;
+  margin-left: -1px;
   padding: 0;
   padding-bottom: 18px;
   padding-left: 2px;
 
   line-height: 18px;
+  letter-spacing: 0.04px;
   color: #666666;
 }
 
@@ -1623,21 +1651,21 @@ img {
   max-width: 300px;
   margin: 0;
   padding: 0;
-  padding-left: 20px;
+  padding-left: 19px;
 
   list-style: none;
 }
 
 .social__item:not(:last-child) {
-  margin-right: 11px;
+  margin-right: 12px;
 }
 
 .social__link {
   position: relative;
 
   display: block;
-  width: 80px;
-  height: 78px;
+  width: 79px;
+  height: 79px;
 
   background-color: #e1e1e1;
   border-radius: 50%;
@@ -1681,8 +1709,8 @@ img {
   content: "";
 
   position: absolute;
-  top: 36%;
-  left: 36%;
+  top: 36.2%;
+  left: 36.2%;
 
   display: inline-block;
   vertical-align: middle;
@@ -1709,7 +1737,7 @@ img {
   -ms-flex-pack: justify;
   justify-content: space-between;
   max-width: 695px;
-  padding-left: 137px;
+  padding-left: 139px;
 }
 
 .social__slogan {
@@ -1718,12 +1746,13 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.19px;
   color: #000000;
 }
 
 .social__description {
   margin: 0;
+  margin-left: 1px;
 
   line-height: 22px;
   color: #444444;
