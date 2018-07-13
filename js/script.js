@@ -17,9 +17,6 @@ function initMap() {
   });
 }
 
-
-
-
 var popup = document.querySelector('.popup');
 var buttonOpenedPopup = document.querySelector('.contacts__button');
 var buttonClosedPopup = popup.querySelector('.popup__button-close');
